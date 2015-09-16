@@ -8,7 +8,6 @@ p {
 
 header img {
 	width : 33%;
-	display : inline;
 }
 
 header h1 {
@@ -18,16 +17,23 @@ header h1 {
 main {
 	width : 66%;
 	float : right;
-	display : inline;
 }
 
 #main-image {
-	width : 66%
+	width : 100%;
+}
+
+.col {
+	float :left;
+	width : 33%;
+}
+
+.img_article {
+	width : 100%;
 }
 
 /* Common attrs for links in the menu */
 nav {
-	display : inline;
 	float : left;
 	width : 33%;
 }
@@ -36,12 +42,9 @@ nav ul{
 	margin : 0;
 	padding : 0;
 	list-style-type : none;
-	border-style : solid;
-	border-width : medium;
 }
 
 nav li a:link, nav li a:visited {
-	display : block;
 	color : #98bf21;
 	text-align : center;
 	padding : 4px;
@@ -51,4 +54,9 @@ nav li a:link, nav li a:visited {
 nav li a:hover, nav li a:active {
 	color : #7A991A;
 	font-weight : bold;
+}
+
+footer {
+	clear: both;
+	width : 100%;
 }
