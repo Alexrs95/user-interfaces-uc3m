@@ -16,6 +16,8 @@ h1, h3 {
 }
 
 body {
+    margin-right : 10%;
+    margin-left : 10%;
     background-color : #333;
 }
 
@@ -44,7 +46,7 @@ main {
     margin-top : 2%;
     margin-bottom : 2%;
 	float :left;
-	width : 30%;
+	width : 31%;
 }
 
 .img_article {
@@ -59,9 +61,56 @@ nav {
 }
 
 nav ul{
-	margin : 0;
+	margin-top : 50%;
 	padding : 0;
 	list-style-type : none;
+}
+
+input {
+    line-height: normal;
+    font-family : "Futura",  sans-serif;
+}
+
+input[type=email]:focus {
+    outline: 0;
+    border: 2px solid #FFD900;
+    box-shadow: none;
+}
+
+
+input[type=email] { 
+    position: relative;
+    padding-right: 45px;
+    padding-left: 15px;
+    opacity: .9;
+    font-size: 1.2em;
+    border-radius: 2px;
+    height: 50px;
+    margin: 0;
+    padding: 0 10px;
+    background: #424242;
+    border: 2px solid #e9e9e9;
+    outline: 0;
+    color: #EFEFEF;
+}
+
+input[type=submit] {
+    border-color: #FFE864;
+    background-color: #FFD900;
+    padding: 11px 20px;
+    font-size: 19px;
+    border-radius: 3px;
+    color: #424242;
+    line-height: 1.33;
+    margin-left : 10px;
+}
+
+input[type=submit]:hover {
+    background-color : #F7D307;
+}
+
+input[type=submit]:active {
+    background-color : #C6A800;
 }
 
 div#subscribe-form {
