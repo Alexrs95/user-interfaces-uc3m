@@ -3,6 +3,8 @@ a {
 }
 
 p {
+    text-align: justify;
+    text-justify: inter-word;
 	font-family : Arial,  sans-serif;
 }
 
@@ -12,7 +14,7 @@ h3 {
 }
 
 body {
-    background-color : #EFEFEF;
+    background-color : #333;
 }
 
 header img {
