@@ -3,12 +3,14 @@ a {
 }
 
 p {
+    color : #EFEFEF; 
     text-align: justify;
     text-justify: inter-word;
 	font-family : Arial,  sans-serif;
 }
 
-h3 {
+h1, h3 {
+    color : #FFE002;
     text-transform: uppercase;
     font-family : "Futura",  sans-serif;
 }
