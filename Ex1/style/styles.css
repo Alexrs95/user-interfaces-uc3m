@@ -3,7 +3,12 @@ a {
 }
 
 p {
-	font-family : sans-serif;
+	font-family : Arial,  sans-serif;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family : "Futura",  sans-serif;
 }
 
 body {
@@ -54,7 +59,7 @@ nav ul{
 	list-style-type : none;
 }
 
-input {
+div#subscribe-form {
     float : right;
 }
 
