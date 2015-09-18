@@ -1,5 +1,5 @@
 a {
-	font-family : sans-serif;
+	font-family :"Futura", sans-serif;
 }
 
 p {
@@ -65,47 +65,9 @@ nav ul{
 	list-style-type : none;
 }
 nav ul li a {
-	padding : 0;
+    display : block;
+	padding : 11px;
 	list-style-type : none;
-}
-input {
-    line-height: normal;
-    font : inherit;
-}
-
-input#input-mail {
-    position: relative;
-    padding-right: 45px;
-    padding-left: 15px;
-    opacity: .9;
-}
-
-input[type=email]:focus {
-    outline: 0;
-    border: 2px solid #FFD900;
-    box-shadow: none;
-}
-
-input[type=email]:hover {
-    border-color: #dad9d4;
-}
-
-input[type=email] {
-    font-size: 1.2em;
-    border-radius: 2px;
-    height: 50px;
-    margin: 0;
-    padding: 0 10px;
-    background: #fff;
-    border: 2px solid #e9e9e9;
-    outline: 0;
-    color: #262b31;
-    box-shadow: none;
-    -webkit-appearance: none;
-}
-
-div#subscribe-form {
-    float : right;
 }
 
 nav li a:link, nav li a:visited {
@@ -126,24 +88,17 @@ div#subscribe-form {
     width : 100%;
 }
 
-#subscribe-form > p {
+div#subscribe-form > p {
     color : #EFEFEF;
     text-transform: uppercase;
     float : left;
     margin-right : 20px;
     font-family : "Futura",  sans-serif;
-
 }
 
 input {
     font-family : "Futura",  sans-serif;
 }
-
-input[type=email]:focus {
-    outline: 0;
-    border: 2px solid #FFD900;
-}
-
 
 input[type=email] {
     float : right;
@@ -156,6 +111,10 @@ input[type=email] {
     background: #424242;
     border: 2px solid #e9e9e9;
     color: #EFEFEF;
+}
+input[type=email]:focus {
+    outline: 0;
+    border: 2px solid #FFD900;
 }
 
 input[type=submit] {
