@@ -62,32 +62,43 @@ nav {
 
     input[type=submit] {
         width: 20%;
+        clear: both;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
+
+
 #display{
-    margin: auto;
-    width: 90%;
-    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: table;
 
     img {
         width: 100%;
     }
 
-    #col_left{
-        text-align: center;
+    figure {
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 0;
         float: left;
-        margin-right: 5%;
-        width: 45%;
-    }
+        width: 48%;
 
-    #col_right{
-        text-align: center;
-        float: right;
-        margin-left: 5%;
-        width: 45%;
+        figcaption {
+            text-align: right;
+        }
     }
+}
 
+footer {
+    background-color: $header-color;
+    display: inline-block;
+    width: 100%;
+    ul {
+        float: left;
+        width: 10%;
+    }
 }
