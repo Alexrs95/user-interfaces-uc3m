@@ -31,7 +31,7 @@ nav {
     }
 }
 
-section {
+#text {
     h2, h3 {
         text-align: center;
     }
@@ -40,7 +40,7 @@ section {
         width: 20%;
         margin-left: auto;
         margin-right: auto;
-    }   
+    }
     article {
         width: 50%;
         display: inline;
@@ -51,7 +51,7 @@ section {
             margin-right: 10%;
             width: 40%;
         }
-        
+
         #p_right {
             text-align: center;
             float: left;
@@ -59,10 +59,35 @@ section {
             width: 40%;
         }
     }
-    
+
     input[type=submit] {
         width: 20%;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+#display{
+    margin: auto;
+    width: 90%;
+    display: grid;
+
+    img {
+        width: 100%;
+    }
+
+    #col_left{
+        text-align: center;
+        float: left;
+        margin-right: 5%;
+        width: 45%;
+    }
+
+    #col_right{
+        text-align: center;
+        float: right;
+        margin-left: 5%;
+        width: 45%;
+    }
+
 }
