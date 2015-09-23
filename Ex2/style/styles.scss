@@ -12,22 +12,51 @@ body {
 
 
 header {
+    position: relative;
     background-color: $header-color;
     img {
-        width : 10%;
-    }
-}
-
-nav {
-    float : right;
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+        width: 10%;
+        padding-left: 10%;
+        padding-top: 2%;
+        padding-bottom: 1%;
     }
 
-    li {
+    nav {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
         display: inline-block;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0; 
+            a {
+                margin: 0;
+                border: 0;
+                display: block;
+                padding: 11px;
+                list-style-type: none;
+            }
+
+            a:link, a:visited {
+                color: #C6A800;
+                text-align: center;
+                text-decoration: none;
+                background-color: #424242;
+            }
+
+            a:hover, a:active {
+                color: #FFD900;
+                font-weight: bold;
+                background-color: #333;
+            }
+        }
     }
 }
 
@@ -62,7 +91,6 @@ nav {
 
     input[type=submit] {
         width: 20%;
-        clear: both;
         margin-left: auto;
         margin-right: auto;
     }
