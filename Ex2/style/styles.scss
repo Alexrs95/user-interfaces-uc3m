@@ -36,32 +36,41 @@ header {
         li {
             display: inline-block;
             margin: 0; 
-            a {
+           
+        	a {
                 margin: 0;
                 border: 0;
                 display: block;
                 padding: 11px;
-                list-style-type: none;
+                border-bottom: 2px solid $header-color;
             }
 
             a:link, a:visited {
                 color: #C6A800;
                 text-align: center;
                 text-decoration: none;
-                background-color: #424242;
             }
 
             a:hover, a:active {
                 color: #FFD900;
                 font-weight: bold;
-                background-color: #333;
+                border-bottom: 2px solid #3ef432;
             }
         }
     }
+}   
+
+#container {
+    margin-top: 0;
+    background-color: green;
 }
 
 #text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     h2, h3 {
+        margin-top: 0;
         text-align: center;
     }
 
@@ -70,29 +79,26 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
-    article {
-        width: 50%;
-        display: inline;
+	
+    input[type=submit] {
+		display: block;
+	    margin: 0px auto;
+	}
 
+       article {
+        width: 100%;
+        display: inline;
         #p_left {
-            text-align: center;
             float: left;
-            margin-right: 10%;
-            width: 40%;
+            width: 45%;
+            margin-right: 5%;
         }
 
         #p_right {
-            text-align: center;
+            margin-left: 5%;
             float: left;
-            margin-left: 10%;
-            width: 40%;
+            width: 45%;
         }
-    }
-
-    input[type=submit] {
-        width: 20%;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 

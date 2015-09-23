@@ -30,40 +30,45 @@ header {
         border: 0;
         display: block;
         padding: 11px;
-        list-style-type: none; }
+        border-bottom: 2px solid #313131; }
       header nav li a:link, header nav li a:visited {
         color: #C6A800;
         text-align: center;
-        text-decoration: none;
-        background-color: #424242; }
+        text-decoration: none; }
       header nav li a:hover, header nav li a:active {
         color: #FFD900;
         font-weight: bold;
-        background-color: #333; }
+        border-bottom: 2px solid #3ef432; }
 
-#text h2, #text h3 {
-  text-align: center; }
-#text hr {
-  width: 20%;
+#container {
+  margin-top: 0;
+  background-color: green; }
+
+#text {
+  width: 80%;
   margin-left: auto;
   margin-right: auto; }
-#text article {
-  width: 50%;
-  display: inline; }
-  #text article #p_left {
-    text-align: center;
-    float: left;
-    margin-right: 10%;
-    width: 40%; }
-  #text article #p_right {
-    text-align: center;
-    float: left;
-    margin-left: 10%;
-    width: 40%; }
-#text input[type=submit] {
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto; }
+  #text h2, #text h3 {
+    margin-top: 0;
+    text-align: center; }
+  #text hr {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto; }
+  #text input[type=submit] {
+    display: block;
+    margin: 0px auto; }
+  #text article {
+    width: 100%;
+    display: inline; }
+    #text article #p_left {
+      float: left;
+      width: 45%;
+      margin-right: 5%; }
+    #text article #p_right {
+      margin-left: 5%;
+      float: left;
+      width: 45%; }
 
 #display {
   margin-left: auto;
