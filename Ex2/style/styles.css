@@ -63,9 +63,32 @@ nav {
 footer {
   background-color: #313131;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   footer ul {
     float: left;
-    width: 10%; }
+    margin-left: 15%;
+    width: 5%;
+    display: inline; }
+  footer li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    color: white; }
+    footer li a:visited, footer li a:link {
+      color: grey;
+      text-align: left;
+      text-decoration: none; }
+    footer li a:hover {
+      color: white;
+      font-weight: bold; }
+  footer #social-networks {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    footer #social-networks img {
+      padding: 20px;
+      width: 5%;
+      float: right; }
 
 /*# sourceMappingURL=styles.css.map */

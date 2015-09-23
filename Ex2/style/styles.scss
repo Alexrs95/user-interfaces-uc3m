@@ -97,8 +97,40 @@ footer {
     background-color: $header-color;
     display: inline-block;
     width: 100%;
+    position: relative;
+
     ul {
         float: left;
-        width: 10%;
+        margin-left: 15%;
+        width: 5%;
+        display: inline;
+    }
+
+    li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        list-style-type: none;
+        color : white;
+        a:visited, a:link{
+            color: grey;
+            text-align : left;
+            text-decoration : none;
+        }
+        a:hover{
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    #social-networks{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+            padding: 20px;
+            width: 5%;
+            float: right;
+        }
     }
 }
