@@ -97,39 +97,42 @@ footer {
     background-color: $header-color;
     display: inline-block;
     width: 100%;
-    position: relative;
+    position: absolute;
 
     ul {
         float: left;
         margin-left: 15%;
         width: 5%;
         display: inline;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     li {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
         list-style-type: none;
-        color : white;
+        color : #C0C0C0;
         a:visited, a:link{
-            color: grey;
+            color: #C0C0C0;
             text-align : left;
             text-decoration : none;
         }
         a:hover{
-            color: white;
+            color: #EEEEEE;
             font-weight: bold;
         }
     }
 
     #social-networks{
+        margin-right: 10%;
         position: absolute;
         bottom: 0;
         right: 0;
 
         img {
             padding: 20px;
-            width: 5%;
+            width: 8%;
             float: right;
         }
     }
