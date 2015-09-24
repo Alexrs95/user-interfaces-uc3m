@@ -59,17 +59,17 @@ header {
   #text input[type=submit] {
     display: block;
     margin: 0 auto;
-    border-color: #FFE864;
-    background-color: #FFD900;
+    border-color: #949292;
+    background-color: #EEE;
     padding: 11px 20px;
     font-size: 1.2em;
     border-radius: 3px;
     color: #424242;
     line-height: 1.33; }
   #text input[type=submit]:hover {
-    background-color: #F7D307; }
+    background-color: #E4E4E4; }
   #text input[type=submit]:active {
-    background-color: #C6A800; }
+    background-color: #C3C3C3; }
   #text article {
     width: 100%;
     display: inline; }
