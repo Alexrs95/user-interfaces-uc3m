@@ -32,17 +32,18 @@ header {
         padding: 11px;
         border-bottom: 2px solid #313131; }
       header nav li a:link, header nav li a:visited {
-        color: #C6A800;
+        color: #C0C0C0;
         text-align: center;
         text-decoration: none; }
       header nav li a:hover, header nav li a:active {
-        color: #FFD900;
+        color: #EEE;
         font-weight: bold;
-        border-bottom: 2px solid #3ef432; }
+        border-bottom: 2px solid #FFF; }
 
 #container {
+  padding: 40px;
   margin-top: 0;
-  background-color: green; }
+  background-color: #C0C0C0; }
 
 #text {
   width: 80%;
@@ -57,7 +58,18 @@ header {
     margin-right: auto; }
   #text input[type=submit] {
     display: block;
-    margin: 0px auto; }
+    margin: 0 auto;
+    border-color: #FFE864;
+    background-color: #FFD900;
+    padding: 11px 20px;
+    font-size: 1.2em;
+    border-radius: 3px;
+    color: #424242;
+    line-height: 1.33; }
+  #text input[type=submit]:hover {
+    background-color: #F7D307; }
+  #text input[type=submit]:active {
+    background-color: #C6A800; }
   #text article {
     width: 100%;
     display: inline; }
