@@ -64,6 +64,7 @@ img.img_article {
 
 /* Menu attrs */
 nav {
+	display: block;
     float : left;
     width : 33%;
 }
