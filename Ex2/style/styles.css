@@ -97,7 +97,7 @@ header {
     width: 48%; }
     #display figure figcaption {
       text-align: right;
-      font-size: 8;
+      font-size: 0.8em;
       font-style: italic; }
 
 footer {
