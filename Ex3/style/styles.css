@@ -93,7 +93,6 @@ nav li a:link, nav li a:visited {
 
 nav li a:hover, nav li a:active {
 	color : #FFD900;
-	font-weight : bold;
     background-color : #333;
 }
 
