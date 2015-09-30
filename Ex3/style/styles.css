@@ -88,7 +88,6 @@ div#subscribe-form > p {
 }
 
 input {
-	width: 60%;
 	margin: 2% auto;
     font-family : "Futura",  sans-serif;
 }
@@ -162,6 +161,15 @@ footer img {
 		display: inline;
 		float: right;
 	}
+
+	input {
+		display: inline;
+		float: left;
+	}
+	
+	input[type=email] {
+		margin-right: 10px;
+	}	
 
 	nav {
 		display: inline-block;
