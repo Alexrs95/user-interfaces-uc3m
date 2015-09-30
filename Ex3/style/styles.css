@@ -82,17 +82,15 @@ nav li a:hover, nav li a:active {
 
 div#subscribe-form > p {
     color : #EFEFEF;
+	text-align: center;
     text-transform: uppercase;
-    margin-right : 20px;
     font-family : "Futura",  sans-serif;
 }
 
 input {
+	width: 60%;
+	margin: 2% auto;
     font-family : "Futura",  sans-serif;
-}
-
-div#input-form {
-	float: right;
 }
 
 input[type=email] {
@@ -111,6 +109,7 @@ input[type=email]:focus {
 }
 
 input[type=submit] {
+	display: block;
     border-color: #FFE864;
     background-color: #FFD900;
     padding: 11px 20px;
@@ -166,7 +165,7 @@ footer img {
 
 	nav {
 		display: inline-block;
-		margin: 3%;
+		margin: 3% 0;
 		width: 100%;
 	}
 
@@ -192,7 +191,6 @@ footer img {
 	}
 
 	nav ul li {
-		clear: left;
 		width: 100%;
 	}
 
