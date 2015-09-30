@@ -94,6 +94,7 @@ input {
 
 input[type=email] {
     display: block;
+    text-align: center;
     font-size: 1.2em;
     border-radius: 2px;
     height: 48px;
