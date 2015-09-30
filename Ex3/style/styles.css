@@ -163,12 +163,15 @@ footer img {
 		display: inline;
 		float: right;
 	}
-	
-	nav ul li a {
-		display: block;
+
+	nav {
+		display: inline-block;
+		margin: 3%;
+		width: 100%;
 	}
 
 	nav ul li {
+		width: 20%;
 		float: left;
 	}
 }
@@ -177,6 +180,7 @@ footer img {
 @media only screen and (min-width: 768px) {
 
 	nav {
+		margin: 0;
 		display: block;
     	float : left;
     	width : 33%;
