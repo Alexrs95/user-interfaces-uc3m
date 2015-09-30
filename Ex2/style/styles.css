@@ -12,12 +12,14 @@ header {
     width: 10%;
     padding-left: 10%;
     padding-top: 2%;
-    padding-bottom: 1%; }
+    padding-bottom: 1%;
+    margin-left: 4%; }
   header nav {
     position: absolute;
     bottom: 0;
-    right: 10%;
-    display: inline-block; }
+    display: inline-block;
+    margin-right: 13%;
+    right: 0%; }
     header nav ul {
       list-style-type: none;
       margin: 0;
@@ -45,7 +47,7 @@ header {
   background-color: #C0C0C0; }
 
 #text {
-  width: 60%;
+  width: 78%;
   margin-left: auto;
   margin-right: auto; }
   #text h2, #text h3 {
@@ -84,7 +86,7 @@ header {
 #display {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 75%;
   display: table; }
   #display img {
     width: 100%; }
@@ -124,7 +126,7 @@ footer {
       color: #EEEEEE;
       font-weight: bold; }
   footer #social-networks {
-    margin-right: 10%;
+    margin-right: 12%;
     position: absolute;
     bottom: 0;
     right: 0; }
