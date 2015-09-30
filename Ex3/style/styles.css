@@ -82,17 +82,14 @@ nav li a:hover, nav li a:active {
 
 div#subscribe-form > p {
     color : #EFEFEF;
+	text-align: center;
     text-transform: uppercase;
-    margin-right : 20px;
     font-family : "Futura",  sans-serif;
 }
 
 input {
+	margin: 2% auto;
     font-family : "Futura",  sans-serif;
-}
-
-div#input-form {
-	float: right;
 }
 
 input[type=email] {
@@ -111,6 +108,7 @@ input[type=email]:focus {
 }
 
 input[type=submit] {
+	display: block;
     border-color: #FFE864;
     background-color: #FFD900;
     padding: 11px 20px;
@@ -163,12 +161,24 @@ footer img {
 		display: inline;
 		float: right;
 	}
+
+	input {
+		display: inline;
+		float: left;
+	}
 	
-	nav ul li a {
-		display: block;
+	input[type=email] {
+		margin-right: 10px;
+	}	
+
+	nav {
+		display: inline-block;
+		margin: 3% 0;
+		width: 100%;
 	}
 
 	nav ul li {
+		width: 20%;
 		float: left;
 	}
 }
@@ -177,6 +187,7 @@ footer img {
 @media only screen and (min-width: 768px) {
 
 	nav {
+		margin: 0;
 		display: block;
     	float : left;
     	width : 33%;
@@ -188,7 +199,6 @@ footer img {
 	}
 
 	nav ul li {
-		clear: left;
 		width: 100%;
 	}
 
