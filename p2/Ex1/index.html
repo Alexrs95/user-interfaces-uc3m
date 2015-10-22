@@ -6,15 +6,140 @@
         <title>TITLE</title>
         <meta charset="UTF-8">
         <link href="style/styles.css" rel="stylesheet" type="text/css" />
+        <script>
+            function addToCart(element, inputId) {
+                var section = element.parentNode.parentNode;
+                var table = document.getElementById("cart-table");
+                var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "<img src=" + section.firstElementChild.src + ">";
+                cell2.innerHTML = document.getElementById(inputId).value;
+            }
+        </script>
     </head>
     <body>
         <header>Header</header>
         <main>
+            <section id="item1" class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input id="quantity1" type="text" value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity1')" type="submit" value="Add">
+                </div>
+            </section>
+            <section id="item2" class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section id="item3"id="item3"  class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
             <section class="item">
                 <img src="images/ring.jpg" alt="" />
                 <h4>Product</h4>
                 <p>Short description of the product</p>
                 <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
+            </section>
+            <section class="item">
+                <img src="images/ring.jpg" alt="" />
+                <h4>Product</h4>
+                <p>Short description of the product</p>
+                <a href="#">More</a>
+                <div class="item-selection">
+                    <input type="text" placeholder="items">
+                    <input onclick="addToCart(this)" type="submit" value="Add">
+                </div>
             </section>
         </main>
         <nav>
@@ -26,7 +151,10 @@
                 <li><a href="#">Item</a></li>
             </ul>
         </nav>
-        <aside>Aside 2</aside>
+        <aside>
+            <table id="cart-table">
+            </table> 
+        </aside>
         <footer>Footer</footer>
     </body>
 </html>
