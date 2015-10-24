@@ -19,6 +19,11 @@
                 cell2.innerHTML = "<p>Quantity: " + document.getElementById(inputId).value + "</p><p>" 
                 + section.firstElementChild.nextSibling.nextSibling.innerHTML + "</p>";
             }
+
+            function emptyCart() {
+                var table = document.getElementById("cart-table");
+                table.innerHTML = "";
+            }
         </script>
     </head>
     <body>
@@ -40,8 +45,8 @@
                 <p>Short description of the product</p>
                 <a href="#">More</a>
                 <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
+                    <input id="quantity2" type="text" value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity2')" type="submit" value="Add">
                 </div>
             </section>
             <section id="item3"id="item3"  class="item">
@@ -50,8 +55,8 @@
                 <p>Short description of the product</p>
                 <a href="#">More</a>
                 <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
+                    <input id="quantity3"type="text" value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity3')" type="submit" value="Add">
                 </div>
             </section>
             <section class="item">
@@ -60,8 +65,8 @@
                 <p>Short description of the product</p>
                 <a href="#">More</a>
                 <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
+                    <input id="quantity4" type="text"  value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity4')" type="submit" value="Add">
                 </div>
             </section>
             <section class="item">
@@ -70,8 +75,8 @@
                 <p>Short description of the product</p>
                 <a href="#">More</a>
                 <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
+                    <input id="quantity5" type="text"  value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity5')" type="submit" value="Add">
                 </div>
             </section>
             <section class="item">
@@ -80,8 +85,8 @@
                 <p>Short description of the product</p>
                 <a href="#">More</a>
                 <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
+                    <input id="quantity6" type="text"  value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity6')" type="submit" value="Add">
                 </div>
             </section>
             <section class="item">
@@ -90,8 +95,8 @@
                 <p>Short description of the product</p>
                 <a href="#">More</a>
                 <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
+                    <input id="quantity7" type="text"  value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity7')" type="submit" value="Add">
                 </div>
             </section>
             <section class="item">
@@ -100,8 +105,8 @@
                 <p>Short description of the product</p>
                 <a href="#">More</a>
                 <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
+                    <input id="quantity8" type="text"  value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity8')" type="submit" value="Add">
                 </div>
             </section>
             <section class="item">
@@ -110,38 +115,8 @@
                 <p>Short description of the product</p>
                 <a href="#">More</a>
                 <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
-                </div>
-            </section>
-            <section class="item">
-                <img src="images/ring.jpg" alt="" />
-                <h4>Product</h4>
-                <p>Short description of the product</p>
-                <a href="#">More</a>
-                <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
-                </div>
-            </section>
-            <section class="item">
-                <img src="images/ring.jpg" alt="" />
-                <h4>Product</h4>
-                <p>Short description of the product</p>
-                <a href="#">More</a>
-                <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
-                </div>
-            </section>
-            <section class="item">
-                <img src="images/ring.jpg" alt="" />
-                <h4>Product</h4>
-                <p>Short description of the product</p>
-                <a href="#">More</a>
-                <div class="item-selection">
-                    <input type="text" placeholder="items">
-                    <input onclick="addToCart(this)" type="submit" value="Add">
+                    <input id="quantity9" type="text"  value="1" placeholder="items">
+                    <input onclick="addToCart(this, 'quantity9')" type="submit" value="Add">
                 </div>
             </section>
         </main>
@@ -155,6 +130,8 @@
             </ul>
         </nav>
         <aside>
+            <input type="submit" value="Finish">
+            <input type="submit" value="Empty cart" onclick="emptyCart()">
             <table id="cart-table">
             </table> 
         </aside>

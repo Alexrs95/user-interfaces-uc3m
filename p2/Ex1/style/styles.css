@@ -68,6 +68,10 @@ aside {
   flex: 2;
   order: 3;
   background: hotpink; }
+  aside #btns {
+    clear: both; }
+    aside #btns input {
+      width: 40%; }
   aside table #cart-img {
     width: 40%; }
     aside table #cart-img img {
