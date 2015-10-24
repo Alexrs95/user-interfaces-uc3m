@@ -66,6 +66,36 @@ aside {
 
 footer {
   order: 4;
-  background: #27292A; }
+  background-color: #27292A;
+  display: inline-block;
+  width: 100%; }
+  footer ul {
+    float: left;
+    margin-left: 10%;
+    width: 15%;
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  footer li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    list-style-type: none;
+    color: #C0C0C0; }
+    footer li a:visited, footer li a:link {
+      color: #C0C0C0;
+      text-align: left;
+      text-decoration: none; }
+    footer li a:hover {
+      color: #EEEEEE;
+      font-weight: bold; }
+  footer #social-networks {
+    margin-right: 12%;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    footer #social-networks img {
+      padding: 20px;
+      width: 8%;
+      float: right; }
 
 /*# sourceMappingURL=styles.css.map */
