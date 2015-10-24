@@ -27,3 +27,21 @@ function hoverNavOn(element){
 function hoverNavOff(element){
     document.getElementById(element.id).style.fontWeight = "normal";
 }
+
+function addToCart(element, inputId) {
+    var section = element.parentNode.parentNode;
+    var table = document.getElementById("cart-table");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    cell1.id = 'cart-img';
+    var cell2 = row.insertCell(1);
+    cell2.id = 'cart-detail';
+    cell1.innerHTML = "<img src=" + section.firstElementChild.src + ">";
+    cell2.innerHTML = "<p>Quantity: " + document.getElementById(inputId).value + "</p><p>" 
+    + section.firstElementChild.nextSibling.nextSibling.innerHTML + "</p>";
+}
+
+function emptyCart() {
+    var table = document.getElementById("cart-table");
+    table.innerHTML = "";
+}

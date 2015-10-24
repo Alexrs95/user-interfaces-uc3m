@@ -60,9 +60,11 @@ main {
     order: 2;
 
     .item {
+        display: inline-block;
         margin: 2%;
         border-radius: 2px;
-        width: 30%;
+        border: 2px solid grey;
+        width: 28%;
         img {
             border-radius: 2px;
             width: 100%;
@@ -81,19 +83,40 @@ main {
         a:link, nav li a:visited {
             text-decoration: none;
             color: $grey;
-            text-decoration : none;
         }
 
         a:hover, nav li a:active {
             color: $accent-color;
         }
+
+        .item-selection {
+            clear: both;
+            display: block;
+            float: right;
+        }
     }
 }
 
 aside {
-    flex: 2 auto;
+    flex: 2;
     order: 3;
     background: hotpink;
+   
+        input {
+            width: 40%;
+        }
+    table{
+        #cart-img{
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+
+        #cart-detail {
+            width: 80%;
+        }
+    }
 }
 
 footer {

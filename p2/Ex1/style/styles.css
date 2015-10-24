@@ -41,9 +41,11 @@ main {
   flex: 8;
   order: 2; }
   main .item {
+    display: inline-block;
     margin: 2%;
     border-radius: 2px;
-    width: 30%; }
+    border: 2px solid grey;
+    width: 28%; }
     main .item img {
       border-radius: 2px;
       width: 100%; }
@@ -54,15 +56,28 @@ main {
       text-transform: uppercase; }
     main .item a:link, main .item nav li a:visited {
       text-decoration: none;
-      color: #B0B5B8;
-      text-decoration: none; }
+      color: #B0B5B8; }
     main .item a:hover, main .item nav li a:active {
       color: #73CCAF; }
+    main .item .item-selection {
+      clear: both;
+      display: block;
+      float: right; }
 
 aside {
-  flex: 2 auto;
+  flex: 2;
   order: 3;
   background: hotpink; }
+  aside #btns {
+    clear: both; }
+    aside #btns input {
+      width: 40%; }
+  aside table #cart-img {
+    width: 40%; }
+    aside table #cart-img img {
+      width: 100%; }
+  aside table #cart-detail {
+    width: 80%; }
 
 footer {
   order: 4;
