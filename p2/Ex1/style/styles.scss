@@ -98,12 +98,20 @@ main {
 }
 
 aside {
-    flex: 2 auto;
+    flex: 2;
     order: 3;
     background: hotpink;
     
     table{
-        img {
+        #cart-img{
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+
+        #cart-detail {
+            width: 80%;
         }
     }
 }

@@ -65,9 +65,15 @@ main {
       float: right; }
 
 aside {
-  flex: 2 auto;
+  flex: 2;
   order: 3;
   background: hotpink; }
+  aside table #cart-img {
+    width: 40%; }
+    aside table #cart-img img {
+      width: 100%; }
+  aside table #cart-detail {
+    width: 80%; }
 
 footer {
   order: 4;
