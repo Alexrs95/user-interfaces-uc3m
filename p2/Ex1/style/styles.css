@@ -82,8 +82,7 @@ main {
       main .item .item-selection #quantity1, main .item .item-selection #quantity2, main .item .item-selection #quantity3, main .item .item-selection #quantity4, main .item .item-selection #quantity5, main .item .item-selection #quantity6,
       main .item .item-selection #quantity7, main .item .item-selection #quantity8, main .item .item-selection #quantity9 {
         width: 30%;
-        padding-top: 1px;
-        padding-bottom: 1px; }
+        padding: 2.5px; }
 
 aside {
   padding: 5px;
