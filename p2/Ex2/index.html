@@ -23,47 +23,71 @@
     <body>
         <header>Header</header>
         <main>
-            <form>
+            <form class="go-bottom">
                 <fieldset>
-                        <legend>Personal info</legend>
-                    <label for="name">Name: </label>
-                    <input id="name" type="text" placeholder="Name">
+                    <legend>Personal info</legend>
+                    <div>
+                        <input id="name" type="text" required>
+                        <label for="name">Name</label>
+                    </div>
                     <br>
-                    <label for="surname" >Surname: </label>
-                    <input id="surname" type="text" placeholder="Surname">
+                    <div>
+                        <input id="surname" type="text" required>
+                        <label for="surname" >Surname</label>
+                    </div>
                     <br>
-                    <label for="email">Email: </label>
-                    <input id="email" type="email" placeholder="example@example.com">
+                    <div>
+                        <input id="email" type="email" required>
+                        <label for="email">Email</label>
+                    </div>
                     <br>
-                    <label for="address">Address: </label>
-                    <input id="address" type="text" placeholder="C/Street No 42">
-                    <br>
+                    <div>
+                        <input id="address" type="text" required>
+                        <label for="address">Address</label>
+                </div>
+                <br>
+                <div>
                     <input type="button" value="Add address" onclick="addAddress()">
-                    <br>
+                </div>
+                <br>
+                <div>
+                    <input id="tel" type="tel" min="9" max="9" pattern="[0-9]+">
                     <label for="tel">Tel: </label>
-                    <input id="tel" type="tel" placeholder="912 345 678" min="9" max="9" pattern="[0-9]+">
+                </div>
                     <br>
                 </fieldset>
                 <fieldset>
                     <legend>User info</legend>
-                    <label for="username">Username: </label>
-                    <input id="username" type="text" placeholder="Username">
+                    <div>
+                        <input id="username" type="text" required>
+                        <label for="username">Username</label>
+                    </div>
                     <br>
-                    <label for="pass">Password: </label>
-                    <input id="pass" type="password">
-                    <br>
-                    <label for="rep_pass">Repeate password: </label>
+                    <div>
+                        <input id="pass" type="password">
+                        <label for="pass">Password</label>
+                </div>
+                <br>
+                <div>
                     <input id="rep_pass" type="password">
-                    <br>
+                    <label for="rep_pass">Repeat password</label>
+                </div>
+                <br>
+                <div>
                     <input type="file" accept="image/*">
-                    <br>
+                </div>
+                <br>
                 </fieldset>
                 <fieldset>
                     <legend>Payment</legend>
-                        <label for="credit_card">Credit Card </label>
+                    <div>
                         <input type="radio" name="payment" id="credit_card">
-                        <label for="paypal">PayPal </label>
+                        <label for="credit_card">Credit Card </label> 
+                    </div>
+                    <div>
                         <input type="radio" name="payment" id="paypal">
+                        <label for="paypal">PayPal</label>
+                    </div>
                     <br>
                     <div id="card_form">
                         <select name="card_type">
@@ -72,17 +96,25 @@
                             <option value="a_expr">American Express</option>
                         </select>
                         <br>
-                        <label for="card_num">Card number: </label>
-                        <input id="card_num" type="number">
+                        <div>
+                            <input id="card_num" type="number">
+                            <label for="card_num">Card number</label>
+                        </div>
                         <br>
-                        <label for="exp_date">Exp. Date: </label>
-                        <input type="date">
+                        <div>
+                            <input id="exp_date" type="date">
+                            <label for="exp_date">Exp. Date</label>
+                        </div>
                         <br>
-                        <label for="cvv">CVV: </label>
-                        <input id="cvv" type="number">
+                        <div>
+                            <input id="cvv" type="number">
+                            <label for="cvv">CVV</label>
+                        </div>
                         <br>
-                        <label for="name">Name: </label>
-                        <input id="name" type="text">
+                        <div>
+                            <input id="name" type="text">
+                            <label for="name">Name</label>
+                        </div>
                         <br>
                     </div>
                 </fieldset>
