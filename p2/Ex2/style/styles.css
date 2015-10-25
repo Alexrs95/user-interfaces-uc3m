@@ -40,13 +40,8 @@ main {
   flex: 8;
   order: 2; }
 
-aside {
-  flex: 2;
-  order: 3;
-  background: hotpink; }
-
 footer {
-  order: 4;
+  order: 3;
   background: #27292A; }
 
 /*# sourceMappingURL=styles.css.map */
