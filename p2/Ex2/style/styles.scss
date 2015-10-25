@@ -12,11 +12,16 @@ body {
     
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
+    font: 14px/1.4 Sans-Serif;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body  > * {
     flex: 1 100%;
+
 }
 
 header {
@@ -57,15 +62,66 @@ nav {
 main {
     flex: 8;
     order: 2;
-}
 
-aside {
-    flex: 2;
-    order: 3;
-    background: hotpink;
-}
+    form {
+        float: left;
+        margin: 20px;
+
+        div {
+            position: relative;
+            overflow: hidden;
+        }
+        input {
+            padding: 12px; 
+            width: 100%;
+            border: 2px solid gray; 
+            background: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            outline: 0;
+
+            &:valid {
+                // Hides the label
+                background: white; 
+            }
+
+            &:focus {
+                padding: 4px 6px 20px 6px; 
+                border-color: #f06d06;
+            }
+            &:focus + label {
+                background: #f06d06;
+                color: white;
+                font-size: 70%;
+                padding: 1px 6px;
+                z-index: 2;
+                text-transform: uppercase;
+                top: 100%;
+                margin-top: -16px;
+                }
+            }
+        label {
+            transition: // not padding
+                background 0.2s,
+                color 0.2s,
+                top 0.2s,
+                bottom 0.2s,
+                right 0.2s,
+                left 0.2s;
+                position: absolute;
+                color: #999;
+                padding: 7px 6px;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+  }
 
 footer {
-    order: 4;
+    order: 3;
     background: $dark-grey;
 }

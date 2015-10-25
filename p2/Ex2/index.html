@@ -6,36 +6,123 @@
         <title>TITLE</title>
         <meta charset="UTF-8">
         <link href="style/styles.css" rel="stylesheet" type="text/css" />
+        <script src="script/jquery-2.1.4.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#credit_card').click(function() {
+                    $('#card_form').show();
+                });
+
+                $('#paypal').click(function() {
+                    $('#card_form').hide();
+                });
+            });
+        </script>
+    
     </head>
     <body>
         <header>Header</header>
         <main>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Surname">
-                <input type="email" placeholder="example@example.com">
-                <input type="text" placeholder="C/Street No 42">
-                <input type="button" value="Add address" onclick="addAddress()">
-                <input type="tel" placeholder="912 345 678" min="9" max="9" pattern="[0-9]+">
-                <input type="text" placeholder="Username">
-                <input type="password">
-                <input type="password">
-                <input type="file" accept="image/*">
-                
-                <form>
-                    <input type="radio" name="payment" value="Credit Card">
-                    <input type="radio" name="payment" value"PayPal">
-                </form>
-                <input type="number">
-                <input type="date">
-                <input type="number">
-                <input type="text">
-                <input type="checkbox">
-
-                
-
+            <form class="go-bottom">
+                <fieldset>
+                    <legend>Personal info</legend>
+                    <div>
+                        <input id="name" type="text" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input id="surname" type="text" required>
+                        <label for="surname" >Surname</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input id="email" type="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input id="address" type="text" required>
+                        <label for="address">Address</label>
+                </div>
+                <br>
+                <div>
+                    <input type="button" value="Add address" onclick="addAddress()">
+                </div>
+                <br>
+                <div>
+                    <input id="tel" type="tel" min="9" max="9" pattern="[0-9]+">
+                    <label for="tel">Tel: </label>
+                </div>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>User info</legend>
+                    <div>
+                        <input id="username" type="text" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input id="pass" type="password">
+                        <label for="pass">Password</label>
+                </div>
+                <br>
+                <div>
+                    <input id="rep_pass" type="password">
+                    <label for="rep_pass">Repeat password</label>
+                </div>
+                <br>
+                <div>
+                    <input type="file" accept="image/*">
+                </div>
+                <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment</legend>
+                    <div>
+                        <input type="radio" name="payment" id="credit_card">
+                        <label for="credit_card">Credit Card </label> 
+                    </div>
+                    <div>
+                        <input type="radio" name="payment" id="paypal">
+                        <label for="paypal">PayPal</label>
+                    </div>
+                    <br>
+                    <div id="card_form">
+                        <select name="card_type">
+                            <option value="visa">Visa</option>
+                            <option value="m_card">MasterCard</option>
+                            <option value="a_expr">American Express</option>
+                        </select>
+                        <br>
+                        <div>
+                            <input id="card_num" type="number">
+                            <label for="card_num">Card number</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input id="exp_date" type="date">
+                            <label for="exp_date">Exp. Date</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input id="cvv" type="number">
+                            <label for="cvv">CVV</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input id="name" type="text">
+                            <label for="name">Name</label>
+                        </div>
+                        <br>
+                    </div>
+                </fieldset>
+                <label for="submit_check">I agree</label>
+                <input id="submit_check" type="checkbox">
+                <br>
+                <hr>
                 <input type="submit" value="submit">
-                
             </form>
         </main>
         <nav>
@@ -47,8 +134,6 @@
                 <li><a href="#">Item</a></li>
             </ul>
         </nav>
-        <aside>
-        </aside>
         <footer>Footer</footer>
     </body>
 </html>
