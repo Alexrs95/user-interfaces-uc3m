@@ -6,23 +6,28 @@ body {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif; }
+  font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
 
 body > * {
   flex: 1 100%; }
 
 header {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  height: 200px;
-  background: url("../images/header_background.jpg"); }
+  height: 500px;
+  background: url("../images/forest-header.jpg");
+  background-size: cover; }
+  header h1 {
+    text-align: center;
+    font-size: 250px;
+    font-weight: lighter;
+    color: white; }
 
 nav {
   flex: 1 auto;
-  order: 1; }
+  order: 1;
+  width: 10%; }
   nav ul {
     list-style-type: none; }
     nav ul li a {
@@ -33,9 +38,6 @@ nav {
     nav ul li a:link, nav ul li nav li a:visited {
       color: #B0B5B8;
       text-decoration: none; }
-    nav ul li a:hover, nav ul li nav li a:active {
-      color: #73CCAF;
-      border-bottom: 2px solid #73CCAF; }
 
 main {
   flex: 8;
@@ -44,34 +46,59 @@ main {
     display: inline-block;
     margin: 2%;
     border-radius: 2px;
-    border: 2px solid grey;
+    border: 2px solid #27292A;
     width: 28%; }
     main .item img {
       border-radius: 2px;
       width: 100%; }
+    main .item h4 {
+      padding: 5px; }
+    main .item p {
+      padding: 5px;
+      font-size: small;
+      color: #979A9B; }
     main .item a {
+      padding: 5px;
       color: #B0B5B8;
       font-weight: bold;
-      float: right;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      float: left; }
     main .item a:link, main .item nav li a:visited {
       text-decoration: none;
       color: #B0B5B8; }
     main .item a:hover, main .item nav li a:active {
       color: #73CCAF; }
     main .item .item-selection {
-      clear: both;
+      padding: 5px;
       display: block;
-      float: right; }
+      float: right;
+      text-align: right;
+      width: 40%; }
+      main .item .item-selection input {
+        border-color: #27292A;
+        background-color: white;
+        border-radius: 3px;
+        color: #979A9B; }
+      main .item .item-selection #quantity1, main .item .item-selection #quantity2, main .item .item-selection #quantity3, main .item .item-selection #quantity4, main .item .item-selection #quantity5, main .item .item-selection #quantity6,
+      main .item .item-selection #quantity7, main .item .item-selection #quantity8, main .item .item-selection #quantity9 {
+        width: 30%;
+        padding-top: 1px;
+        padding-bottom: 1px; }
 
 aside {
+  padding: 5px;
+  text-align: center;
   flex: 2;
   order: 3;
-  background: hotpink; }
-  aside #btns {
-    clear: both; }
-    aside #btns input {
-      width: 40%; }
+  background-color: #27292A;
+  color: #979A9B;
+  padding-top: 15px; }
+  aside input {
+    width: 40%;
+    border-color: #27292A;
+    background-color: #979A9B;
+    border-radius: 3px;
+    color: white; }
   aside table #cart-img {
     width: 40%; }
     aside table #cart-img img {
@@ -81,12 +108,12 @@ aside {
 
 footer {
   order: 4;
-  background-color: #27292A;
+  background: url("../images/wood_header.jpg");
   display: inline-block;
   width: 100%; }
   footer ul {
     float: left;
-    margin-left: 10%;
+    margin-left: 20%;
     width: 15%;
     display: inline;
     padding-top: 10px;
@@ -103,14 +130,5 @@ footer {
     footer li a:hover {
       color: #EEEEEE;
       font-weight: bold; }
-  footer #social-networks {
-    margin-right: 12%;
-    position: absolute;
-    bottom: 0;
-    right: 0; }
-    footer #social-networks img {
-      padding: 20px;
-      width: 8%;
-      float: right; }
 
 /*# sourceMappingURL=styles.css.map */

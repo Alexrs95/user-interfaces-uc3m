@@ -37,7 +37,7 @@ function addToCart(element, inputId) {
     var cell2 = row.insertCell(1);
     cell2.id = 'cart-detail';
     cell1.innerHTML = "<img src=" + section.firstElementChild.src + ">";
-    cell2.innerHTML = "<p>Quantity: " + document.getElementById(inputId).value + "</p><p>" 
+    cell2.innerHTML = "<p>Quantity: " + document.getElementById(inputId).value + "</p><p>"
     + section.firstElementChild.nextSibling.nextSibling.innerHTML + "</p>";
 }
 
