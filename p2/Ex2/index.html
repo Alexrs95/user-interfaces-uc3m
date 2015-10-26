@@ -7,52 +7,39 @@
         <meta charset="UTF-8">
         <link href="style/styles.css" rel="stylesheet" type="text/css" />
         <script src="script/jquery-2.1.4.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#credit_card').click(function() {
-                    $('#card_form').show();
-                });
-
-                $('#paypal').click(function() {
-                    $('#card_form').hide();
-                });
-            });
+        <script src="script/script.js">
         </script>
     
     </head>
     <body>
         <header>Header</header>
         <main>
-            <form class="go-bottom">
+            <form>
                 <fieldset>
                     <legend>Personal info</legend>
                     <div>
                         <input id="name" type="text" required>
-                        <label for="name">Name</label>
+                        <label id="label_name" for="name">Name</label>
                     </div>
                     <br>
                     <div>
                         <input id="surname" type="text" required>
-                        <label for="surname" >Surname</label>
+                        <label id="label_surname" for="surname">Surname</label>
                     </div>
                     <br>
                     <div>
-                        <input id="email" type="email" required>
-                        <label for="email">Email</label>
+                        <input id="email" type="text" required>
+                        <label id="label_email" for="email">Email</label>
                     </div>
                     <br>
                     <div>
                         <input id="address" type="text" required>
-                        <label for="address">Address</label>
+                        <label id="label_address" for="address">Address</label>
                 </div>
                 <br>
                 <div>
-                    <input type="button" value="Add address" onclick="addAddress()">
-                </div>
-                <br>
-                <div>
-                    <input id="tel" type="tel" min="9" max="9" pattern="[0-9]+">
-                    <label for="tel">Tel: </label>
+                    <input id="tel" type="text">
+                    <label id="label_tel" for="tel">Tel</label>
                 </div>
                     <br>
                 </fieldset>
@@ -60,33 +47,33 @@
                     <legend>User info</legend>
                     <div>
                         <input id="username" type="text" required>
-                        <label for="username">Username</label>
+                        <label id="label_username" for="username">Username</label>
                     </div>
                     <br>
                     <div>
-                        <input id="pass" type="password">
-                        <label for="pass">Password</label>
+                        <input id="pass" type="password" required>
+                        <label id="label_pass" for="pass">Password</label>
                 </div>
                 <br>
                 <div>
-                    <input id="rep_pass" type="password">
-                    <label for="rep_pass">Repeat password</label>
+                    <input id="rep_pass" type="password" required>
+                    <label id="label_rep_pass" for="rep_pass">Repeat password</label>
                 </div>
                 <br>
                 <div>
                     <input type="file" accept="image/*">
+                    <p>You can change it later.</p>
                 </div>
                 <br>
                 </fieldset>
                 <fieldset>
                     <legend>Payment</legend>
                     <div>
-                        <input type="radio" name="payment" id="credit_card">
-                        <label for="credit_card">Credit Card </label> 
-                    </div>
-                    <div>
-                        <input type="radio" name="payment" id="paypal">
+                        <label for="credit_card">Credit Card </label>
+                        <input type="radio" name="payment" id="credit_card" value="card">
+                        <br>
                         <label for="paypal">PayPal</label>
+                        <input type="radio" name="payment" id="paypal" value="paypal">
                     </div>
                     <br>
                     <div id="card_form">
@@ -98,31 +85,31 @@
                         <br>
                         <div>
                             <input id="card_num" type="number">
-                            <label for="card_num">Card number</label>
+                            <label id="label_card_num" for="card_num">Card number</label>
                         </div>
                         <br>
                         <div>
                             <input id="exp_date" type="date">
-                            <label for="exp_date">Exp. Date</label>
+                            <label id="label_exp_date" for="exp_date">Exp. Date</label>
                         </div>
                         <br>
                         <div>
                             <input id="cvv" type="number">
-                            <label for="cvv">CVV</label>
+                            <label id="label_cvv" for="cvv">CVV</label>
                         </div>
                         <br>
                         <div>
-                            <input id="name" type="text">
-                            <label for="name">Name</label>
+                            <input id="card_name" type="text">
+                            <label id="label_card_name" for="card_name">Name</label>
                         </div>
                         <br>
                     </div>
                 </fieldset>
-                <label for="submit_check">I agree</label>
+                <p>I agree</p>
                 <input id="submit_check" type="checkbox">
                 <br>
                 <hr>
-                <input type="submit" value="submit">
+                <input id="submit" type="button" value="submit" required>
             </form>
         </main>
         <nav>
