@@ -16,6 +16,88 @@
                 $('#paypal').click(function() {
                     $('#card_form').hide();
                 });
+
+                $('#submit').click(function() {
+                    name = $("#name").val();
+                    if(name.length > 0) {
+                        console.log("valid name");
+                    }else{
+                        $("#name").css({'border-color': 'red'});
+                        $("#label_name").css({'background': 'red'});
+
+                    };
+
+                    surname = $('#surname').val();
+                    if(surname.length > 0) {
+                        console.log("valid surname");
+                    };
+
+                    mail = $('#email').val();
+                    if (mail.match('^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$')) {
+                        console.log("valid mail");
+                    };
+
+                    address = $('#address').val();
+                    if (address.length > 0) {
+                        console.log("valid address");
+
+                    };
+
+                    number = $('#tel').val();
+                    if (number.length == 9 && number.match('^[0-9]{9}')) {
+                        console.log("valid number");
+                    };
+
+                    username = $('#username').val();
+                    if (username.length > 0) {
+                        //Remaining fields mandatory
+                        pass = $('#pass').val();
+                        if (pass.match('^[0-9a-z]{8}')) {
+                            console.log("valid pass");
+                        };
+
+                        rep_pass = $('#rep_pass').val();
+                        if (rep_pass == pass) {
+                            console.log("valid rep pass");
+                        };
+                    };
+
+                    radio = $("form input[type='radio']:checked").val();
+                    if (radio == "paypal") {
+                        window.open('https://www.paypal.com/es/home', '_blank');
+                    } else if(radio == "card") {
+
+                        cardNum = $('#card_num').val();
+                        if (cardNum.length > 0) {
+                            console.log('card num valid');
+                        };
+
+                        expDate = $('#exp_date').val();
+                        if (exp_date.length > 0) {
+                            console.log('exp_date correct');
+                        };
+
+                        cvv = $('#cvv').val();
+                        if (cvv.length > 0) {
+                            console.log('cvv correct');
+                        };
+
+                        cardName = $('#cardName').val();
+                        if (cardName.length > 0) {
+                            console.log('card name valid');
+                        };
+
+                    } else {
+                        //error
+                    };
+
+                    // if ($('#submit_check').is(':checked')) {
+                    //     console.log('checked');
+                    // };
+                });
+                
+
+        
             });
         </script>
     
@@ -23,21 +105,21 @@
     <body>
         <header>Header</header>
         <main>
-            <form class="go-bottom">
+            <form>
                 <fieldset>
                     <legend>Personal info</legend>
                     <div>
                         <input id="name" type="text" required>
-                        <label for="name">Name</label>
+                        <label id="label_name" for="name">Name</label>
                     </div>
                     <br>
                     <div>
                         <input id="surname" type="text" required>
-                        <label for="surname" >Surname</label>
+                        <label for="surname">Surname</label>
                     </div>
                     <br>
                     <div>
-                        <input id="email" type="email" required>
+                        <input id="email" type="text" required>
                         <label for="email">Email</label>
                     </div>
                     <br>
@@ -51,8 +133,8 @@
                 </div>
                 <br>
                 <div>
-                    <input id="tel" type="tel" min="9" max="9" pattern="[0-9]+">
-                    <label for="tel">Tel: </label>
+                    <input id="tel" type="text">
+                    <label for="tel">Tel</label>
                 </div>
                     <br>
                 </fieldset>
@@ -64,29 +146,29 @@
                     </div>
                     <br>
                     <div>
-                        <input id="pass" type="password">
+                        <input id="pass" type="password" required>
                         <label for="pass">Password</label>
                 </div>
                 <br>
                 <div>
-                    <input id="rep_pass" type="password">
+                    <input id="rep_pass" type="password" required>
                     <label for="rep_pass">Repeat password</label>
                 </div>
                 <br>
                 <div>
                     <input type="file" accept="image/*">
+                    <p>You can change it later.</p>
                 </div>
                 <br>
                 </fieldset>
                 <fieldset>
                     <legend>Payment</legend>
                     <div>
-                        <input type="radio" name="payment" id="credit_card">
-                        <label for="credit_card">Credit Card </label> 
-                    </div>
-                    <div>
-                        <input type="radio" name="payment" id="paypal">
+                        <label for="credit_card">Credit Card </label>
+                        <input type="radio" name="payment" id="credit_card" value="card">
+                        <br>
                         <label for="paypal">PayPal</label>
+                        <input type="radio" name="payment" id="paypal" value="paypal">
                     </div>
                     <br>
                     <div id="card_form">
@@ -112,17 +194,17 @@
                         </div>
                         <br>
                         <div>
-                            <input id="name" type="text">
-                            <label for="name">Name</label>
+                            <input id="card_name" type="text">
+                            <label for="card_name">Name</label>
                         </div>
                         <br>
                     </div>
                 </fieldset>
-                <label for="submit_check">I agree</label>
+                <p>I agree</p>
                 <input id="submit_check" type="checkbox">
                 <br>
                 <hr>
-                <input type="submit" value="submit">
+                <input id="submit" type="button" value="submit" required>
             </form>
         </main>
         <nav>
