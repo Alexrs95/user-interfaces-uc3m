@@ -42,71 +42,13 @@ nav {
 main {
   flex: 8;
   order: 2; }
-  main .item {
-    display: inline-block;
-    margin: 2%;
-    border-radius: 2px;
-    border: 2px solid #27292A;
-    width: 28%; }
-    main .item img {
-      border-radius: 2px;
-      width: 100%; }
-    main .item h4 {
-      padding: 5px; }
-    main .item p {
-      padding: 5px;
-      font-size: small;
-      color: #979A9B; }
-    main .item a {
-      padding: 5px;
-      color: #B0B5B8;
-      font-weight: bold;
-      text-transform: uppercase;
-      float: left; }
-    main .item a:link, main .item nav li a:visited {
-      text-decoration: none;
-      color: #B0B5B8; }
-    main .item a:hover, main .item nav li a:active {
-      color: #73CCAF; }
-    main .item .item-selection {
-      padding: 5px;
-      display: block;
-      float: right;
-      text-align: right;
-      width: 40%; }
-      main .item .item-selection input {
-        border-color: #27292A;
-        background-color: white;
-        border-radius: 3px;
-        color: #979A9B; }
-      main .item .item-selection #quantity1, main .item .item-selection #quantity2, main .item .item-selection #quantity3, main .item .item-selection #quantity4, main .item .item-selection #quantity5, main .item .item-selection #quantity6,
-      main .item .item-selection #quantity7, main .item .item-selection #quantity8, main .item .item-selection #quantity9 {
-        width: 30%;
-        padding: 2.5px; }
-
-aside {
-  padding: 5px;
-  text-align: center;
-  flex: 2;
-  order: 3;
-  background-color: #27292A;
-  color: #979A9B;
-  padding-top: 15px; }
-  aside input {
-    width: 40%;
-    border-color: #27292A;
-    background-color: #979A9B;
-    border-radius: 3px;
-    color: white; }
-  aside table #cart-img {
-    width: 40%; }
-    aside table #cart-img img {
-      width: 100%; }
-  aside table #cart-detail {
-    width: 80%; }
+  main #quantity1, main #quantity2, main #quantity3, main #quantity4, main #quantity5, main #quantity6,
+  main #quantity7, main #quantity8, main #quantity9 {
+    width: 30%;
+    padding: 2.5px; }
 
 footer {
-  order: 4;
+  order: 3;
   background: url("../images/wood_header.jpg");
   display: inline-block;
   width: 100%; }
@@ -338,11 +280,11 @@ footer {
 /* Animation classes and animations */
 /* Slide in from the right*/
 .da-slide-fromright h2 {
-  -webkit-animation: fromRightAnim1 0.6s ease-in 0.8s both;
-  -moz-animation: fromRightAnim1 0.6s ease-in 0.8s both;
-  -o-animation: fromRightAnim1 0.6s ease-in 0.8s both;
-  -ms-animation: fromRightAnim1 0.6s ease-in 0.8s both;
-  animation: fromRightAnim1 0.6s ease-in 0.8s both; }
+  -webkit-animation: fromLefAnim1 0.6s ease-in 0.8s both;
+  -moz-animation: fromLeftAnim1 0.6s ease-in 0.8s both;
+  -o-animation: fromLeftAnim1 0.6s ease-in 0.8s both;
+  -ms-animation: fromLeftAnim1 0.6s ease-in 0.8s both;
+  animation: fromLeftAnim1 0.6s ease-in 0.8s both; }
 
 .da-slide-fromright p {
   -webkit-animation: fromRightAnim2 0.6s ease-in 0.8s both;
@@ -522,11 +464,11 @@ footer {
     opacity: 1; } }
 /* Slide in from the left*/
 .da-slide-fromleft h2 {
-  -webkit-animation: fromLeftAnim1 0.6s ease-in 0.6s both;
-  -moz-animation: fromLeftAnim1 0.6s ease-in 0.6s both;
-  -o-animation: fromLeftAnim1 0.6s ease-in 0.6s both;
-  -ms-animation: fromLeftAnim1 0.6s ease-in 0.6s both;
-  animation: fromLeftAnim1 0.6s ease-in 0.6s both; }
+  -webkit-animation: fromRightAnim1 0.6s ease-in 0.6s both;
+  -moz-animation: fromRightAnim1 0.6s ease-in 0.6s both;
+  -o-animation: fromRightAnim1 0.6s ease-in 0.6s both;
+  -ms-animation: fromRightAnim1 0.6s ease-in 0.6s both;
+  animation: fromRightAnim1 0.6s ease-in 0.6s both; }
 
 .da-slide-fromleft p {
   -webkit-animation: fromLeftAnim2 0.6s ease-in 0.6s both;
@@ -706,11 +648,11 @@ footer {
     opacity: 1; } }
 /* Slide out to the right */
 .da-slide-toright h2 {
-  -webkit-animation: toRightAnim1 0.6s ease-in 0.6s both;
-  -moz-animation: toRightAnim1 0.6s ease-in 0.6s both;
-  -o-animation: toRightAnim1 0.6s ease-in 0.6s both;
-  -ms-animation: toRightAnim1 0.6s ease-in 0.6s both;
-  animation: toRightAnim1 0.6s ease-in 0.6s both; }
+  -webkit-animation: toLeftAnim1 0.6s ease-in 0.6s both;
+  -moz-animation: toLeftAnim1 0.6s ease-in 0.6s both;
+  -o-animation: toLeftAnim1 0.6s ease-in 0.6s both;
+  -ms-animation: toLeftAnim1 0.6s ease-in 0.6s both;
+  animation: toLeftAnim1 0.6s ease-in 0.6s both; }
 
 .da-slide-toright p {
   -webkit-animation: toRightAnim2 0.6s ease-in 0.3s both;
@@ -905,11 +847,11 @@ footer {
     opacity: 0; } }
 /* Slide out to the left*/
 .da-slide-toleft h2 {
-  -webkit-animation: toLeftAnim1 0.6s ease-in both;
-  -moz-animation: toLeftAnim1 0.6s ease-in both;
-  -o-animation: toLeftAnim1 0.6s ease-in both;
-  -ms-animation: toLeftAnim1 0.6s ease-in both;
-  animation: toLeftAnim1 0.6s ease-in both; }
+  -webkit-animation: toRightAnim1 0.6s ease-in both;
+  -moz-animation: toRightAnim1 0.6s ease-in both;
+  -o-animation: toRightAnim1 0.6s ease-in both;
+  -ms-animation: toRightAnim1 0.6s ease-in both;
+  animation: toRightAnim1 0.6s ease-in both; }
 
 .da-slide-toleft p {
   -webkit-animation: toLeftAnim2 0.6s ease-in 0.3s both;

@@ -66,98 +66,16 @@ main {
     flex: 8;
     order: 2;
 
-    .item {
-        display: inline-block;
-        margin: 2%;
-        border-radius: 2px;
-        border: 2px solid $dark-grey;
-        width: 28%;
-        img {
-            border-radius: 2px;
-            width: 100%;
-        }
-
-        h4 {
-            padding: 5px;
-        }
-
-        p{
-            padding: 5px;
-            font-size: small;
-            color: $medium-grey;
-        }
-
-        a {
-            padding: 5px;
-            color: $grey;
-            font-weight: bold;
-            text-transform: uppercase;
-            float: left;
-        }
-
-        a:link, nav li a:visited {
-            text-decoration: none;
-            color: $grey;
-        }
-
-        a:hover, nav li a:active {
-            color: $accent-color;
-        }
-
-        .item-selection {
-            padding: 5px;
-            display: block;
-            float: right;
-            text-align: right;
-            width: 40%;
-
-            input {
-                border-color: $dark-grey;
-                background-color: white;
-                border-radius: 3px;
-                color: $medium-grey;
-            }
-
-            #quantity1, #quantity2, #quantity3, #quantity4, #quantity5, #quantity6,
-            #quantity7, #quantity8, #quantity9 {
-                width: 30%;
-                padding: 2.5px;
-            }
-        }
+    #quantity1, #quantity2, #quantity3, #quantity4, #quantity5, #quantity6,
+    #quantity7, #quantity8, #quantity9 {
+        width: 30%;
+        padding: 2.5px;
     }
 }
 
-aside {
-    padding: 5px;
-    text-align: center;
-    flex: 2;
-    order: 3;
-    background-color: $dark-grey;
-    color: $medium-grey;
-    padding-top: 15px;
-        input {
-            width: 40%;
-            border-color: $dark-grey;
-            background-color: $medium-grey;
-            border-radius: 3px;
-            color: white;
-        }
-    table{
-        #cart-img{
-            width: 40%;
-            img {
-                width: 100%;
-            }
-        }
-
-        #cart-detail {
-            width: 80%;
-        }
-    }
-}
 
 footer {
-    order: 4;
+    order: 3;
     background: url('../images/wood_header.jpg');
     display: inline-block;
     width: 100%;
@@ -401,11 +319,11 @@ footer {
 
 /* Slide in from the right*/
 .da-slide-fromright h2{
-	-webkit-animation: fromRightAnim1 0.6s ease-in 0.8s both;
-	-moz-animation: fromRightAnim1 0.6s ease-in 0.8s both;
-	-o-animation: fromRightAnim1 0.6s ease-in 0.8s both;
-	-ms-animation: fromRightAnim1 0.6s ease-in 0.8s both;
-	animation: fromRightAnim1 0.6s ease-in 0.8s both;
+	-webkit-animation: fromLefAnim1 0.6s ease-in 0.8s both;
+	-moz-animation: fromLeftAnim1 0.6s ease-in 0.8s both;
+	-o-animation: fromLeftAnim1 0.6s ease-in 0.8s both;
+	-ms-animation: fromLeftAnim1 0.6s ease-in 0.8s both;
+	animation: fromLeftAnim1 0.6s ease-in 0.8s both;
 }
 .da-slide-fromright p{
 	-webkit-animation: fromRightAnim2 0.6s ease-in 0.8s both;
@@ -519,11 +437,11 @@ footer {
 }
 /* Slide in from the left*/
 .da-slide-fromleft h2{
-	-webkit-animation: fromLeftAnim1 0.6s ease-in 0.6s both;
-	-moz-animation: fromLeftAnim1 0.6s ease-in 0.6s both;
-	-o-animation: fromLeftAnim1 0.6s ease-in 0.6s both;
-	-ms-animation: fromLeftAnim1 0.6s ease-in 0.6s both;
-	animation: fromLeftAnim1 0.6s ease-in 0.6s both;
+	-webkit-animation: fromRightAnim1 0.6s ease-in 0.6s both;
+	-moz-animation: fromRightAnim1 0.6s ease-in 0.6s both;
+	-o-animation: fromRightAnim1 0.6s ease-in 0.6s both;
+	-ms-animation: fromRightAnim1 0.6s ease-in 0.6s both;
+	animation: fromRightAnim1 0.6s ease-in 0.6s both;
 }
 .da-slide-fromleft p{
 	-webkit-animation: fromLeftAnim2 0.6s ease-in 0.6s both;
@@ -637,11 +555,11 @@ footer {
 }
 /* Slide out to the right */
 .da-slide-toright h2{
-	-webkit-animation: toRightAnim1 0.6s ease-in 0.6s both;
-	-moz-animation: toRightAnim1 0.6s ease-in 0.6s both;
-	-o-animation: toRightAnim1 0.6s ease-in 0.6s both;
-	-ms-animation: toRightAnim1 0.6s ease-in 0.6s both;
-	animation: toRightAnim1 0.6s ease-in 0.6s both;
+	-webkit-animation: toLeftAnim1 0.6s ease-in 0.6s both;
+	-moz-animation: toLeftAnim1 0.6s ease-in 0.6s both;
+	-o-animation: toLeftAnim1 0.6s ease-in 0.6s both;
+	-ms-animation: toLeftAnim1 0.6s ease-in 0.6s both;
+	animation: toLeftAnim1 0.6s ease-in 0.6s both;
 }
 .da-slide-toright p{
 	-webkit-animation: toRightAnim2 0.6s ease-in 0.3s both;
@@ -760,11 +678,11 @@ footer {
 }
 /* Slide out to the left*/
 .da-slide-toleft h2{
-	-webkit-animation: toLeftAnim1 0.6s ease-in both;
-	-moz-animation: toLeftAnim1 0.6s ease-in both;
-	-o-animation: toLeftAnim1 0.6s ease-in both;
-	-ms-animation: toLeftAnim1 0.6s ease-in both;
-	animation: toLeftAnim1 0.6s ease-in both;
+	-webkit-animation: toRightAnim1 0.6s ease-in both;
+	-moz-animation: toRightAnim1 0.6s ease-in both;
+	-o-animation: toRightAnim1 0.6s ease-in both;
+	-ms-animation: toRightAnim1 0.6s ease-in both;
+	animation: toRightAnim1 0.6s ease-in both;
 }
 .da-slide-toleft p{
 	-webkit-animation: toLeftAnim2 0.6s ease-in 0.3s both;
