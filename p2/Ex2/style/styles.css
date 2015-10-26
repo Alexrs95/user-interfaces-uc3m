@@ -48,14 +48,14 @@ main {
     main form div {
       position: relative;
       overflow: hidden; }
-    main form input, main form select {
+    main form input {
       padding: 4px 6px 20px 6px;
       width: 100%;
       background: none;
       position: relative; }
     main form input[type=text], main form input[type=password], main form input[type=number], main form input[type=date] {
       top: 0;
-      border: 2px solid gray;
+      border: 2px solid #B0B5B8;
       left: 0;
       z-index: 1;
       outline: 0; }
@@ -64,7 +64,7 @@ main {
       main form input[type=text]:focus + label, main form input[type=password]:focus + label, main form input[type=number]:focus + label, main form input[type=date]:focus + label {
         background: #f06d06; }
       main form input[type=text] + label, main form input[type=password] + label, main form input[type=number] + label, main form input[type=date] + label {
-        background: grey;
+        background: #B0B5B8;
         color: white;
         font-size: 70%;
         padding: 1px 6px;
@@ -73,14 +73,10 @@ main {
         top: 100%;
         margin-top: -16px; }
     main form label {
-      transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+      transition: background 0.2s, color 0.2s;
       position: absolute;
-      color: #999;
-      padding: 7px 6px;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%; }
+      width: 100%;
+      padding-left: 30px; }
 
 footer {
   order: 3;

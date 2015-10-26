@@ -7,98 +7,7 @@
         <meta charset="UTF-8">
         <link href="style/styles.css" rel="stylesheet" type="text/css" />
         <script src="script/jquery-2.1.4.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#credit_card').click(function() {
-                    $('#card_form').show();
-                });
-
-                $('#paypal').click(function() {
-                    $('#card_form').hide();
-                });
-
-                $('#submit').click(function() {
-                    name = $("#name").val();
-                    if(name.length > 0) {
-                        console.log("valid name");
-                    }else{
-                        $("#name").css({'border-color': 'red'});
-                        $("#label_name").css({'background': 'red'});
-
-                    };
-
-                    surname = $('#surname').val();
-                    if(surname.length > 0) {
-                        console.log("valid surname");
-                    };
-
-                    mail = $('#email').val();
-                    if (mail.match('^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$')) {
-                        console.log("valid mail");
-                    };
-
-                    address = $('#address').val();
-                    if (address.length > 0) {
-                        console.log("valid address");
-
-                    };
-
-                    number = $('#tel').val();
-                    if (number.length == 9 && number.match('^[0-9]{9}')) {
-                        console.log("valid number");
-                    };
-
-                    username = $('#username').val();
-                    if (username.length > 0) {
-                        //Remaining fields mandatory
-                        pass = $('#pass').val();
-                        if (pass.match('^[0-9a-z]{8}')) {
-                            console.log("valid pass");
-                        };
-
-                        rep_pass = $('#rep_pass').val();
-                        if (rep_pass == pass) {
-                            console.log("valid rep pass");
-                        };
-                    };
-
-                    radio = $("form input[type='radio']:checked").val();
-                    if (radio == "paypal") {
-                        window.open('https://www.paypal.com/es/home', '_blank');
-                    } else if(radio == "card") {
-
-                        cardNum = $('#card_num').val();
-                        if (cardNum.length > 0) {
-                            console.log('card num valid');
-                        };
-
-                        expDate = $('#exp_date').val();
-                        if (exp_date.length > 0) {
-                            console.log('exp_date correct');
-                        };
-
-                        cvv = $('#cvv').val();
-                        if (cvv.length > 0) {
-                            console.log('cvv correct');
-                        };
-
-                        cardName = $('#cardName').val();
-                        if (cardName.length > 0) {
-                            console.log('card name valid');
-                        };
-
-                    } else {
-                        //error
-                    };
-
-                    // if ($('#submit_check').is(':checked')) {
-                    //     console.log('checked');
-                    // };
-                });
-                
-
-        
-            });
+        <script src="script/script.js">
         </script>
     
     </head>
@@ -115,26 +24,22 @@
                     <br>
                     <div>
                         <input id="surname" type="text" required>
-                        <label for="surname">Surname</label>
+                        <label id="label_surname" for="surname">Surname</label>
                     </div>
                     <br>
                     <div>
                         <input id="email" type="text" required>
-                        <label for="email">Email</label>
+                        <label id="label_email" for="email">Email</label>
                     </div>
                     <br>
                     <div>
                         <input id="address" type="text" required>
-                        <label for="address">Address</label>
-                </div>
-                <br>
-                <div>
-                    <input type="button" value="Add address" onclick="addAddress()">
+                        <label id="label_address" for="address">Address</label>
                 </div>
                 <br>
                 <div>
                     <input id="tel" type="text">
-                    <label for="tel">Tel</label>
+                    <label id="label_tel" for="tel">Tel</label>
                 </div>
                     <br>
                 </fieldset>
@@ -142,17 +47,17 @@
                     <legend>User info</legend>
                     <div>
                         <input id="username" type="text" required>
-                        <label for="username">Username</label>
+                        <label id="label_username" for="username">Username</label>
                     </div>
                     <br>
                     <div>
                         <input id="pass" type="password" required>
-                        <label for="pass">Password</label>
+                        <label id="label_pass" for="pass">Password</label>
                 </div>
                 <br>
                 <div>
                     <input id="rep_pass" type="password" required>
-                    <label for="rep_pass">Repeat password</label>
+                    <label id="label_rep_pass" for="rep_pass">Repeat password</label>
                 </div>
                 <br>
                 <div>
@@ -180,22 +85,22 @@
                         <br>
                         <div>
                             <input id="card_num" type="number">
-                            <label for="card_num">Card number</label>
+                            <label id="label_card_num" for="card_num">Card number</label>
                         </div>
                         <br>
                         <div>
                             <input id="exp_date" type="date">
-                            <label for="exp_date">Exp. Date</label>
+                            <label id="label_exp_date" for="exp_date">Exp. Date</label>
                         </div>
                         <br>
                         <div>
                             <input id="cvv" type="number">
-                            <label for="cvv">CVV</label>
+                            <label id="label_cvv" for="cvv">CVV</label>
                         </div>
                         <br>
                         <div>
                             <input id="card_name" type="text">
-                            <label for="card_name">Name</label>
+                            <label id="label_card_name" for="card_name">Name</label>
                         </div>
                         <br>
                     </div>

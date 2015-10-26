@@ -72,7 +72,7 @@ main {
             overflow: hidden;
         }
 
-        input, select{
+        input {
             padding: 4px 6px 20px 6px; 
             width: 100%;
             background: none;
@@ -81,17 +81,13 @@ main {
 
         input[type=text], input[type=password], input[type=number], input[type=date] {
             top: 0;
-            border: 2px solid gray; 
+            border: 2px solid $grey; 
             left: 0;
             z-index: 1;
             outline: 0;
 
-
             &:focus {
                 border-color: #f06d06;
-            }
-
-            & {
             }
 
             &:focus + label {
@@ -99,7 +95,7 @@ main {
             }
 
             & + label {
-                background: grey;
+                background: $grey;
                 color: white;
                 font-size: 70%;
                 padding: 1px 6px;
@@ -108,25 +104,18 @@ main {
                 top: 100%;
                 margin-top: -16px;
             }
-            }
-        label {
-            transition: // not padding
-                background 0.2s,
-                color 0.2s,
-                top 0.2s,
-                bottom 0.2s,
-                right 0.2s,
-                left 0.2s;
-                position: absolute;
-                color: #999;
-                padding: 7px 6px;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-            }
         }
-  }
+
+        label {
+            transition:
+                background 0.2s,
+                color 0.2s;
+            position: absolute;
+            width: 100%;
+            padding-left: 30px;
+        }
+    }
+}
 
 footer {
     order: 3;

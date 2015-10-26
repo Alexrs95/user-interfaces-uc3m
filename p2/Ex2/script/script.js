@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('#card_form').hide();
+
     $('#credit_card').click(function() {
         $('#card_form').show();
     });
@@ -81,7 +83,7 @@ $(document).ready(function(){
         };
 
         radio = $("form input[type='radio']:checked").val();
-        if (radio == "paypal") {
+        if (radio == "paypal" && isValid) {
             window.open('https://www.paypal.com/es/home', '_blank');
         } else if(radio == "card") {
 
@@ -126,9 +128,9 @@ $(document).ready(function(){
         };
 
         if (isValid) {
-
+            alert("Valid");
         }else {
-
+            alert("Invalid");
         };
 
         // if ($('#submit_check').is(':checked')) {
