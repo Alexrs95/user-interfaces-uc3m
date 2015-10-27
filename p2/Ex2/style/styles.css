@@ -69,7 +69,8 @@ main {
       width: 50%;
       text-align: center;
       float: left;
-      margin-left: 24%; }
+      margin-left: 24%;
+      margin-top: 12px; }
     main form #submit {
       border-color: #27292A;
       background-color: white;

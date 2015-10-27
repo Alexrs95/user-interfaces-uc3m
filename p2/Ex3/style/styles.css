@@ -41,7 +41,8 @@ nav {
 
 main {
   flex: 8;
-  order: 2; }
+  order: 2;
+  text-align: left; }
   main #quantity1, main #quantity2, main #quantity3, main #quantity4, main #quantity5, main #quantity6,
   main #quantity7, main #quantity8, main #quantity9 {
     width: 30%;
@@ -73,10 +74,11 @@ footer {
       font-weight: bold; }
 
 .da-slider {
-  width: 100%;
+  width: 90%;
   min-width: 520px;
   height: 400px;
   position: relative;
+  float: left;
   margin: 30px auto;
   overflow: hidden;
   background: transparent url(../images/parallax-bg.jpg) repeat 0% 0%;

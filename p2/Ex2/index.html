@@ -18,6 +18,7 @@
                     <legend>Personal info</legend>
                     <div>
                         <input id="name" type="text" placeholder="Name*" class="floatlabel">
+                    </div>
                     <br>
                     <div>
                         <input id="surname" type="text" placeholder="Surname*" class="floatlabel">
@@ -53,7 +54,7 @@
                 <div>
                     <p>You can change it later.</p>
                     <input type="file" accept="image/*" onchange="loadFile(event)">
-                    <img id="output"/>
+                    <img id="output" src="images/placeholder_user.png" alt="User Image"/>
                     <script>
                         var loadFile = function(event) {
                             var reader = new FileReader();
@@ -106,7 +107,7 @@
                 <label for="submit_check">I agree the <a href="#">Terms & Conditions</a></label>
                 <br>
                 <hr>
-                <input id="submit" type="button" value="Submit" required>
+                <input id="submit" type="button" value="Submit">
             </form>
         </main>
         <nav>
@@ -130,5 +131,6 @@
                 <li><a href="#">Quality Wood</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        </footer>
     </body>
 </html>
