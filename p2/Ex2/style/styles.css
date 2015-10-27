@@ -53,6 +53,9 @@ main {
     margin-left: 10%;
     margin-bottom: 60px;
     width: 60%; }
+    main form fieldset {
+      border: solid 3px #979A9B;
+      margin-bottom: 30px; }
     main form input {
       padding: 10px;
       width: 100%;
@@ -64,8 +67,9 @@ main {
       border-bottom: 2px solid #73CCAF; }
     main form #output {
       width: 50%;
-      text-align: right;
-      float: right; }
+      text-align: center;
+      float: left;
+      margin-left: 24%; }
     main form #submit {
       border-color: #27292A;
       background-color: white;

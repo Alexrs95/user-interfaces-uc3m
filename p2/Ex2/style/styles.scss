@@ -77,6 +77,11 @@ main {
         margin-bottom: 60px;
         width: 60%;
 
+        fieldset {
+            border: solid 3px $medium-grey;
+            margin-bottom: 30px;
+        }
+
         input {
             padding: 10px;
             width: 100%;
@@ -92,8 +97,9 @@ main {
 
         #output{
             width: 50%;
-            text-align: right;
-            float: right;
+            text-align: center;
+            float: left;
+            margin-left: 24%;
         }
 
         #submit {
