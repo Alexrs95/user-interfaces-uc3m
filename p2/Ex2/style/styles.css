@@ -53,6 +53,15 @@ main {
     margin-left: 10%;
     margin-bottom: 60px;
     width: 60%; }
+    main form input {
+      padding: 10px;
+      width: 100%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #B0B5B8; }
+    main form input:hover, main form input:active {
+      border-bottom: 2px solid #73CCAF; }
     main form #output {
       width: 50%;
       text-align: right;
@@ -66,13 +75,8 @@ main {
       font-weight: bold;
       text-align: center;
       vertical-align: center; }
-    main form #submit_chek {
-      float: left; }
     main form label {
-      transition: background 0.2s, color 0.2s;
-      position: absolute;
-      width: 100%;
-      padding-left: 30px; }
+      width: 100%; }
 
 footer {
   order: 4;

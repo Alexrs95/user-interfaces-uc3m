@@ -77,6 +77,19 @@ main {
         margin-bottom: 60px;
         width: 60%;
 
+        input {
+            padding: 10px;
+            width: 100%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid $grey;
+        }
+
+        input:hover, input:active {
+            border-bottom: 2px solid $accent-color;
+        }
+
         #output{
             width: 50%;
             text-align: right;
@@ -94,18 +107,8 @@ main {
             vertical-align: center;
         }
 
-
-        #submit_chek {
-            float: left;
-        }
-
         label {
-            transition:
-                background 0.2s,
-                color 0.2s;
-            position: absolute;
             width: 100%;
-            padding-left: 30px;
         }
     }
 }

@@ -36,6 +36,7 @@ $(document).ready(function(){
 
         mail = $('#email').val();
         if (mail.match('^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$')) {
+            $("label.mail-label").css({'color' : 'red'})
             console.log("valid mail");
         }else {
             isValid = false;
@@ -58,6 +59,8 @@ $(document).ready(function(){
         }else {
             isValid = false;
             $("#tel").css({'border-color': 'red'});
+            $("label.tel-label").css({'color' : 'red'})
+
         };
 
         username = $('#username').val();
