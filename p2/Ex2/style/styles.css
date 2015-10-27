@@ -6,7 +6,10 @@ body {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  font: 14px/1.4 Sans-Serif; }
+  font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
 
 * {
   box-sizing: border-box; }
@@ -15,12 +18,14 @@ body > * {
   flex: 1 100%; }
 
 header {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  height: 200px; }
+  height: 500px;
+  background: url("../images/forest-header.jpg");
+  background-size: cover; }
+  header h1 {
+    text-align: center;
+    font-size: 250px;
+    font-weight: lighter;
+    color: white; }
 
 nav {
   flex: 1 auto;
@@ -44,7 +49,10 @@ main {
   order: 2; }
   main form {
     float: left;
-    margin: 20px; }
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 60px;
+    width: 60%; }
     main form div {
       position: relative;
       overflow: hidden; }
@@ -72,6 +80,21 @@ main {
         text-transform: uppercase;
         top: 100%;
         margin-top: -16px; }
+    main form #output {
+      width: 50%;
+      text-align: right;
+      float: right; }
+    main form #submit {
+      border-color: #27292A;
+      background-color: white;
+      border-radius: 3px;
+      padding: 20px;
+      color: #979A9B;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: center; }
+    main form #submit_chek {
+      float: left; }
     main form label {
       transition: background 0.2s, color 0.2s;
       position: absolute;
@@ -79,7 +102,28 @@ main {
       padding-left: 30px; }
 
 footer {
-  order: 3;
-  background: #27292A; }
+  order: 4;
+  background: url("../images/wood_header.jpg");
+  display: inline-block;
+  width: 100%; }
+  footer ul {
+    float: left;
+    margin-left: 20%;
+    width: 15%;
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  footer li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    list-style-type: none;
+    color: #C0C0C0; }
+    footer li a:visited, footer li a:link {
+      color: #C0C0C0;
+      text-align: left;
+      text-decoration: none; }
+    footer li a:hover {
+      color: #EEEEEE;
+      font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,16 +3,16 @@
 <!-- https://dribbble.com/shots/1169972-Homepage/attachments/152888 -->
 <html>
     <head>
-        <title>TITLE</title>
+        <title>Woodcase</title>
         <meta charset="UTF-8">
         <link href="style/styles.css" rel="stylesheet" type="text/css" />
         <script src="script/jquery-2.1.4.js"></script>
         <script src="script/script.js">
         </script>
-    
+
     </head>
     <body>
-        <header>Header</header>
+        <header><h1>WoodCase</h1></header>
         <main>
             <form>
                 <fieldset>
@@ -61,8 +61,19 @@
                 </div>
                 <br>
                 <div>
-                    <input type="file" accept="image/*">
                     <p>You can change it later.</p>
+                    <input type="file" accept="image/*" onchange="loadFile(event)">
+                    <img id="output"/>
+                    <script>
+                        var loadFile = function(event) {
+                            var reader = new FileReader();
+                            reader.onload = function(){
+                                var output = document.getElementById('output');
+                                output.src = reader.result;
+                            };
+                            reader.readAsDataURL(event.target.files[0]);
+                        };
+                    </script>
                 </div>
                 <br>
                 </fieldset>
@@ -105,22 +116,33 @@
                         <br>
                     </div>
                 </fieldset>
-                <p>I agree</p>
                 <input id="submit_check" type="checkbox">
+                <p id>I agree the <a href="#">Terms & Conditions</a></p>
                 <br>
                 <hr>
-                <input id="submit" type="button" value="submit" required>
+                <input id="submit" type="button" value="Submit" required>
             </form>
         </main>
         <nav>
             <ul>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
+                <li><a href="#" id="navItem1" onclick="clickNav(this)" onmouseover="hoverNavOn(this)" onmouseout="hoverNavOff(this)">Slim Case</a></li>
+                <li><a href="#" id="navItem2" onclick="clickNav(this)" onmouseover="hoverNavOn(this)" onmouseout="hoverNavOff(this)">Solid Case</a></li>
+                <li><a href="#" id="navItem3" onclick="clickNav(this)" onmouseover="hoverNavOn(this)" onmouseout="hoverNavOff(this)">Skin</a></li>
+                <li><a href="#" id="navItem4" onclick="clickNav(this)" onmouseover="hoverNavOn(this)" onmouseout="hoverNavOff(this)">Our Story</a></li>
+                <li><a href="#" id="navItem5" onclick="clickNav(this)" onmouseover="hoverNavOn(this)" onmouseout="hoverNavOff(this)">Contact</a></li>
             </ul>
         </nav>
-        <footer>Footer</footer>
+        <footer>
+            <!-- Links and social network icons -->
+            <ul>
+                <li><a href="#">Slim Case</a></li>
+                <li><a href="#">Solid Case</a></li>
+                <li><a href="#">Skins</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Quality Wood</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
     </body>
 </html>
