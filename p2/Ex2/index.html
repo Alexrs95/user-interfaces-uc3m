@@ -9,11 +9,6 @@
         <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="script/floatlabels.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('input.floatlabel').floatlabel();
-            });
-        </script>
     
     </head>
     <body>
@@ -24,14 +19,13 @@
                     <legend>Personal info</legend>
                     <div>
                         <input id="name" type="text" placeholder="Name*" class="floatlabel">
-                    </div>
                     <br>
                     <div>
                         <input id="surname" type="text" placeholder="Surname*" class="floatlabel">
                     </div>
                     <br>
                     <div>
-                        <input id="email" type="text" placeholder="Email*" class="floatlabel">
+                        <input id="email" type="text" placeholder="Email*" class="floatlabel" data-class="mail-label">
                     </div>
                     <br>
                     <div>

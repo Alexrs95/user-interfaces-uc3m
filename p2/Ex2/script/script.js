@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    $('input.floatlabel').floatlabel();
+
     $('#card_form').hide();
 
     $('#credit_card').click(function() {
@@ -21,7 +24,6 @@ $(document).ready(function(){
         }else{
             isValid = false;
             $("#name").css({'border-color': 'red'});
-
         };
 
         surname = $('#surname').val();
@@ -38,6 +40,8 @@ $(document).ready(function(){
         }else {
             isValid = false;
             $("#email").css({'border-color': 'red'});
+            $("label.mail-label").css({'color' : 'red'})
+
         };
 
         address = $('#address').val();
