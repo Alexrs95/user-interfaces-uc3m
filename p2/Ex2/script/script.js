@@ -20,7 +20,6 @@ $(document).ready(function(){
         name = $("#name").val();
         if(name.length > 0) {
             console.log("valid name");
-            $("#name").css({'border-color': 'red'});
         }else{
             isValid = false;
             $("#name").css({'border-color': 'red'});
@@ -36,7 +35,6 @@ $(document).ready(function(){
 
         mail = $('#email').val();
         if (mail.match('^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$')) {
-            $("label.mail-label").css({'color' : 'red'})
             console.log("valid mail");
         }else {
             isValid = false;
@@ -80,6 +78,7 @@ $(document).ready(function(){
             }else{
                 isValid = false;
                 $("#rep_pass").css({'border-color': 'red'});
+                $("label.rep_pass-label").css({'color' : 'red'})
             };
         };
 
@@ -89,11 +88,12 @@ $(document).ready(function(){
         } else if(radio == "card") {
 
             cardNum = $('#card_num').val();
-            if (cardNum.length > 0) {
+            if (cardNum.length > 0 && cardNum.match('[0-9]{13,16}')) {
                 console.log('card num valid');
             }else {
                 isValid = false;
                 $("#card_num").css({'border-color': 'red'});
+                $("label.card_num-label").css({'color' : 'red'});
             };
 
             expDate = $('#exp_date').val();
@@ -102,6 +102,8 @@ $(document).ready(function(){
             }else {
                 isValid = false;
                 $("#exp_date").css({'border-color': 'red'});
+                $("label.exp_date-label").css({'color' : 'red'})
+
             };
 
             cvv = $('#cvv').val();
