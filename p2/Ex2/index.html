@@ -6,11 +6,10 @@
         <title>Woodcase</title>
         <meta charset="UTF-8">
         <link href="style/styles.css" rel="stylesheet" type="text/css" />
-        <script src="script/jquery-2.1.4.js"></script>
-        <script src="script/script.js">
-        </script>
-
-    </head>
+        <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="script/floatlabels.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+        </head>
     <body>
         <header><h1>WoodCase</h1></header>
         <main>
@@ -18,46 +17,37 @@
                 <fieldset>
                     <legend>Personal info</legend>
                     <div>
-                        <input id="name" type="text" required>
-                        <label id="label_name" for="name">Name</label>
+                        <input id="name" type="text" placeholder="Name*" class="floatlabel">
+                    <br>
+                    <div>
+                        <input id="surname" type="text" placeholder="Surname*" class="floatlabel">
                     </div>
                     <br>
                     <div>
-                        <input id="surname" type="text" required>
-                        <label id="label_surname" for="surname">Surname</label>
+                        <input id="email" type="text" placeholder="Email*" class="floatlabel" data-class="mail-label">
                     </div>
                     <br>
                     <div>
-                        <input id="email" type="text" required>
-                        <label id="label_email" for="email">Email</label>
-                    </div>
-                    <br>
-                    <div>
-                        <input id="address" type="text" required>
-                        <label id="label_address" for="address">Address</label>
+                        <input id="address" type="text" placeholder="Address*" class="floatlabel">
                 </div>
                 <br>
                 <div>
-                    <input id="tel" type="text">
-                    <label id="label_tel" for="tel">Tel</label>
+                    <input id="tel" type="text" placeholder="Tel" class="floatlabel">
                 </div>
                     <br>
                 </fieldset>
                 <fieldset>
                     <legend>User info</legend>
                     <div>
-                        <input id="username" type="text" required>
-                        <label id="label_username" for="username">Username</label>
+                        <input id="username" type="text" placeholder="Username" class="floatlabel">
                     </div>
                     <br>
                     <div>
-                        <input id="pass" type="password" required>
-                        <label id="label_pass" for="pass">Password</label>
+                        <input id="pass" type="password" placeholder="Password" class="floatlabel">
                 </div>
                 <br>
                 <div>
-                    <input id="rep_pass" type="password" required>
-                    <label id="label_rep_pass" for="rep_pass">Repeat password</label>
+                    <input id="rep_pass" type="password" placeholder="Repeat password" class="floatlabel">
                 </div>
                 <br>
                 <div>
@@ -80,11 +70,11 @@
                 <fieldset>
                     <legend>Payment</legend>
                     <div>
-                        <label for="credit_card">Credit Card </label>
                         <input type="radio" name="payment" id="credit_card" value="card">
+                        <label for="credit_card">Credit Card </label>
                         <br>
-                        <label for="paypal">PayPal</label>
                         <input type="radio" name="payment" id="paypal" value="paypal">
+                        <label for="paypal">PayPal</label>
                     </div>
                     <br>
                     <div id="card_form">
@@ -95,23 +85,19 @@
                         </select>
                         <br>
                         <div>
-                            <input id="card_num" type="number">
-                            <label id="label_card_num" for="card_num">Card number</label>
+                            <input id="card_num" type="number" placeholder="Card number*" class="floatlabel">
                         </div>
                         <br>
                         <div>
-                            <input id="exp_date" type="date">
-                            <label id="label_exp_date" for="exp_date">Exp. Date</label>
+                            <input id="exp_date" type="date" placeholder="Exp. date*" class="floatlabel">
                         </div>
                         <br>
                         <div>
-                            <input id="cvv" type="number">
-                            <label id="label_cvv" for="cvv">CVV</label>
+                            <input id="cvv" type="number" placeholder="CVV*" class="floatlabel">
                         </div>
                         <br>
                         <div>
-                            <input id="card_name" type="text">
-                            <label id="label_card_name" for="card_name">Name</label>
+                            <input id="card_name" type="text" placeholder="Name*" class="floatlabel">
                         </div>
                         <br>
                     </div>
