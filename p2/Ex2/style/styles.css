@@ -1,55 +1,102 @@
-/*
-Error: Invalid CSS after "...argin-top: 20px": expected "{", was ";"
-        on line 76 of styles.scss
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova","Helvetica Neue","Helvetica","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
 
-71:     order: 2;
-72: 
-73:     form {
-74:         float: left;
-75: <<<<<<< HEAD
-76:         margin-top: 20px;
-77:         margin-left: 10%;
-78:         margin-bottom: 60px;
-79:         width: 60%;
-80: 
-81:         div {
+* {
+  box-sizing: border-box; }
 
-Backtrace:
-styles.scss:76
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:637:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.10.1/lib/listen/listener.rb:305:in `call'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.10.1/lib/listen/listener.rb:305:in `_process_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.10.1/lib/listen/listener.rb:269:in `block in _wait_for_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.10.1/lib/listen/listener.rb:252:in `loop'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.10.1/lib/listen/listener.rb:252:in `_wait_for_changes'
-/Library/Ruby/Gems/2.0.0/gems/listen-2.10.1/lib/listen/listener.rb:341:in `block in _start_wait_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...argin-top: 20px\": expected \"{\", was \";\"\A         on line 76 of styles.scss\A \A 71:     order: 2;\A 72: \A 73:     form {\A 74:         float: left;\A 75: <<<<<<< HEAD\A 76:         margin-top: 20px;\A 77:         margin-left: 10%;\A 78:         margin-bottom: 60px;\A 79:         width: 60%;\A 80: \A 81:         div {"; }
+body > * {
+  flex: 1 100%; }
+
+header {
+  height: 500px;
+  background: url("../images/forest-header.jpg");
+  background-size: cover; }
+  header h1 {
+    text-align: center;
+    font-size: 250px;
+    font-weight: lighter;
+    color: white; }
+
+nav {
+  flex: 1 auto;
+  order: 1; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li a {
+      color: #B0B5B8;
+      display: block;
+      padding: 11px;
+      border-bottom: 2px solid transparent; }
+    nav ul li a:link, nav ul li nav li a:visited {
+      color: #B0B5B8;
+      text-decoration: none; }
+    nav ul li a:hover, nav ul li nav li a:active {
+      color: #73CCAF;
+      border-bottom: 2px solid #73CCAF; }
+
+main {
+  flex: 8;
+  order: 2; }
+  main form {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 60px;
+    width: 60%; }
+    main form #output {
+      width: 50%;
+      text-align: right;
+      float: right; }
+    main form #submit {
+      border-color: #27292A;
+      background-color: white;
+      border-radius: 3px;
+      padding: 20px;
+      color: #979A9B;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: center; }
+    main form #submit_chek {
+      float: left; }
+    main form label {
+      transition: background 0.2s, color 0.2s;
+      position: absolute;
+      width: 100%;
+      padding-left: 30px; }
+
+footer {
+  order: 4;
+  background: url("../images/wood_header.jpg");
+  display: inline-block;
+  width: 100%; }
+  footer ul {
+    float: left;
+    margin-left: 20%;
+    width: 15%;
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  footer li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    list-style-type: none;
+    color: #C0C0C0; }
+    footer li a:visited, footer li a:link {
+      color: #C0C0C0;
+      text-align: left;
+      text-decoration: none; }
+    footer li a:hover {
+      color: #EEEEEE;
+      font-weight: bold; }
+
+/*# sourceMappingURL=styles.css.map */
