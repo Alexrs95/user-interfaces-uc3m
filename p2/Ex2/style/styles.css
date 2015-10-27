@@ -45,38 +45,6 @@ main {
   main form {
     float: left;
     margin: 20px; }
-    main form div {
-      position: relative;
-      overflow: hidden; }
-    main form input {
-      padding: 4px 6px 20px 6px;
-      width: 100%;
-      background: none;
-      position: relative; }
-    main form input[type=text], main form input[type=password], main form input[type=number], main form input[type=date] {
-      top: 0;
-      border: 2px solid #B0B5B8;
-      left: 0;
-      z-index: 1;
-      outline: 0; }
-      main form input[type=text]:focus, main form input[type=password]:focus, main form input[type=number]:focus, main form input[type=date]:focus {
-        border-color: #f06d06; }
-      main form input[type=text]:focus + label, main form input[type=password]:focus + label, main form input[type=number]:focus + label, main form input[type=date]:focus + label {
-        background: #f06d06; }
-      main form input[type=text] + label, main form input[type=password] + label, main form input[type=number] + label, main form input[type=date] + label {
-        background: #B0B5B8;
-        color: white;
-        font-size: 70%;
-        padding: 1px 6px;
-        z-index: 2;
-        text-transform: uppercase;
-        top: 100%;
-        margin-top: -16px; }
-    main form label {
-      transition: background 0.2s, color 0.2s;
-      position: absolute;
-      width: 100%;
-      padding-left: 30px; }
 
 footer {
   order: 3;

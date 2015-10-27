@@ -66,54 +66,6 @@ main {
     form {
         float: left;
         margin: 20px;
-
-        div {
-            position: relative;
-            overflow: hidden;
-        }
-
-        input {
-            padding: 4px 6px 20px 6px; 
-            width: 100%;
-            background: none;
-            position: relative;
-        }
-
-        input[type=text], input[type=password], input[type=number], input[type=date] {
-            top: 0;
-            border: 2px solid $grey; 
-            left: 0;
-            z-index: 1;
-            outline: 0;
-
-            &:focus {
-                border-color: #f06d06;
-            }
-
-            &:focus + label {
-                background: #f06d06;
-            }
-
-            & + label {
-                background: $grey;
-                color: white;
-                font-size: 70%;
-                padding: 1px 6px;
-                z-index: 2;
-                text-transform: uppercase;
-                top: 100%;
-                margin-top: -16px;
-            }
-        }
-
-        label {
-            transition:
-                background 0.2s,
-                color 0.2s;
-            position: absolute;
-            width: 100%;
-            padding-left: 30px;
-        }
     }
 }
 

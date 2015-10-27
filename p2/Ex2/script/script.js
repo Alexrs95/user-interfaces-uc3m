@@ -2,11 +2,11 @@ $(document).ready(function(){
     $('#card_form').hide();
 
     $('#credit_card').click(function() {
-        $('#card_form').show();
+        $('#card_form').slideDown();
     });
 
     $('#paypal').click(function() {
-        $('#card_form').hide();
+        $('#card_form').slideUp();
     });
 
 
@@ -17,10 +17,10 @@ $(document).ready(function(){
         name = $("#name").val();
         if(name.length > 0) {
             console.log("valid name");
+            $("#name").css({'border-color': 'red'});
         }else{
             isValid = false;
             $("#name").css({'border-color': 'red'});
-            $("#label_name").css({'background': 'red'});
 
         };
 
@@ -30,7 +30,6 @@ $(document).ready(function(){
         }else{
             isValid = false;
             $("#surname").css({'border-color': 'red'});
-            $("#label_surname").css({'background': 'red'});
         };
 
         mail = $('#email').val();
@@ -39,7 +38,6 @@ $(document).ready(function(){
         }else {
             isValid = false;
             $("#email").css({'border-color': 'red'});
-            $("#label_email").css({'background': 'red'});
         };
 
         address = $('#address').val();
@@ -48,7 +46,6 @@ $(document).ready(function(){
         }else {
             isValid = false;
             $("#address").css({'border-color': 'red'});
-            $("#label_address").css({'background': 'red'});
         };
 
         number = $('#tel').val();
@@ -57,19 +54,17 @@ $(document).ready(function(){
         }else {
             isValid = false;
             $("#tel").css({'border-color': 'red'});
-            $("#label_tel").css({'background': 'red'});
         };
 
         username = $('#username').val();
         if (username.length > 0) {
             //Remaining fields mandatory
             pass = $('#pass').val();
-            if (pass.match('^[0-9a-z]{8}')) {
+            if (pass.match('^[0-9a-z]{1,8}')) {
                 console.log("valid pass");
             }else{
                 isValid = false;
                 $("#pass").css({'border-color': 'red'});
-                $("#label_pass").css({'background': 'red'});
             };
 
             rep_pass = $('#rep_pass').val();
@@ -78,7 +73,6 @@ $(document).ready(function(){
             }else{
                 isValid = false;
                 $("#rep_pass").css({'border-color': 'red'});
-                $("#label_rep_pass").css({'background': 'red'});
             };
         };
 
@@ -93,16 +87,14 @@ $(document).ready(function(){
             }else {
                 isValid = false;
                 $("#card_num").css({'border-color': 'red'});
-                $("#label_card_num").css({'background': 'red'});
             };
 
             expDate = $('#exp_date').val();
-            if (exp_date.length > 0) {
+            if (expDate.length > 0) {
                 console.log('exp_date correct');
             }else {
                 isValid = false;
                 $("#exp_date").css({'border-color': 'red'});
-                $("#label_exp_date").css({'background': 'red'});
             };
 
             cvv = $('#cvv').val();
@@ -111,16 +103,14 @@ $(document).ready(function(){
             }else {
                 isValid = false;
                 $("#cvv").css({'border-color': 'red'});
-                $("#label_cvv").css({'background': 'red'});
             };
 
-            cardName = $('#cardName').val();
+            cardName = $('#card_name').val();
             if (cardName.length > 0) {
                 console.log('card name valid');
             }else{
                 isValid = false;
-                $("#cardName").css({'border-color': 'red'});
-                $("#label_cardName").css({'background': 'red'});
+                $("#card_name").css({'border-color': 'red'});
             };
 
         } else {
@@ -133,8 +123,5 @@ $(document).ready(function(){
             alert("Invalid");
         };
 
-        // if ($('#submit_check').is(':checked')) {
-        //     console.log('checked');
-        // };
     });
 });
