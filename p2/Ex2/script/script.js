@@ -151,7 +151,7 @@ $(document).ready(function(){
         };
 
         if (isValid) {
-            alert("Valid");
+            alert("Valid, and email will be sent to " + mail);
         }else {
             alert("Invalid");
         };
