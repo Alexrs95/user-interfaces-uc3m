@@ -70,6 +70,13 @@ main {
     flex: 8;
     order: 2;
 
+    > p {
+        float: left;
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-bottom: 60px;
+        width: 60%;    }
+
     form {
         float: left;
         margin-top: 20px;
@@ -93,6 +100,10 @@ main {
 
         input:hover, input:active {
             border-bottom: 2px solid $accent-color;
+        }
+
+        input[type=button] {
+            border: 2px solid $grey;
         }
 
         #output{

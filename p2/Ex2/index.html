@@ -13,6 +13,7 @@
     <body>
         <header><h1>WoodCase</h1></header>
         <main>
+        <p>In order to finish your purchase, please fill out this form so we can complete your order. The estimated delivery time is 3-4 days inside UE and 7-12 days for international shipping.</p>
             <form>
                 <fieldset>
                     <legend>Personal info</legend>
@@ -52,7 +53,7 @@
                 </div>
                 <br>
                 <div>
-                    <p>You can change it later.</p>
+                    <p>Profile image (You can change it later)</p>
                     <input type="file" accept="image/*" onchange="loadFile(event)">
                     <img id="output" src="images/placeholder_user.png" alt="User Image"/>
                     <script>
@@ -69,7 +70,8 @@
                 <br>
                 </fieldset>
                 <fieldset>
-                    <legend>Payment</legend>
+                    <legend>Shipping information</legend>
+                    <p>Total: 57,75€</p>
                     <div>
                         <label for="credit_card">Credit Card </label>
                         <input type="radio" name="payment" id="credit_card" value="card">

@@ -91,6 +91,18 @@ $(document).ready(function(){
             };
         };
 
+        var countChecked = function() {
+            var n = $( "input[type=checkbox]:checked" ).length;
+            if (n === 1) {
+                isValid = true;
+            } else {
+                isValid = false;
+            };
+        };
+       countChecked();
+ 
+        $("input[type=checkbox]" ).on( "click", countChecked);
+
         radio = $("form input[type='radio']:checked").val();
         if (radio == "paypal" && isValid) {
             window.open('https://www.paypal.com/es/home', '_blank');
