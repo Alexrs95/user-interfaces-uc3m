@@ -2,3 +2,7 @@
 .sass-cache
 *.map
 .DS_Store
+*.toc
+*.aux
+*.log
+*.synctex.gz
