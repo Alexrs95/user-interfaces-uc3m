@@ -1,3 +1,54 @@
+* {
+  box-sizing: border-box; }
+
+header {
+  width: 1050px;
+  height: 150px;
+  margin: auto;
+  padding-top: 20px;
+  background-color: #021179;
+  /* LOGOUT BUTTON AND USERNAME BOX */ }
+  header img#logo-big {
+    display: inline;
+    float: left; }
+  header span#logo-reduced {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    display: none; }
+  header div#campus_global_text {
+    display: inline;
+    align-self: center;
+    padding-top: 200px;
+    margin-left: 160px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 35px;
+    color: white; }
+  header div#profile {
+    width: 210px;
+    height: 35px;
+    margin-top: 32px;
+    margin-right: 20px;
+    float: right; }
+    header div#profile img#logout {
+      height: 35px;
+      float: right;
+      margin-left: 10px; }
+    header div#profile div#username {
+      background-color: lightblue;
+      padding: 0px 10px;
+      float: right;
+      display: inline; }
+      header div#profile div#username img {
+        height: 20px; }
+      header div#profile div#username p {
+        font-size: 15px;
+        color: black;
+        line-height: normal;
+        margin: 5px 0px; }
+
 nav > ul > li {
   display: inline-block; }
 
