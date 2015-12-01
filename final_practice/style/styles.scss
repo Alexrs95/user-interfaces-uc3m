@@ -4,6 +4,79 @@ $orange: #DF9F00;
 
 $font-stack: Helvetica, sans-serif;
 
+// HEADER SCSS
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 1050px;
+    height: 150px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: rgb(2, 17, 121);
+
+    img#logo-big {
+        display: inline;
+        float: left;
+    }
+
+    span#logo-reduced {
+        font-size: 20px;
+        color: white;
+        text-align: left;
+        display: none;
+    }
+
+    div#campus_global_text {
+        display: inline;
+        align-self: center;
+        padding-top: 200px;
+        margin-left: 160px;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+    /* LOGOUT BUTTON AND USERNAME BOX */
+
+    div#profile {
+        width: 210px;
+        height: 35px;
+        margin-top: 32px;
+        margin-right: 20px;
+        float: right;
+
+        img#logout {
+            height: 35px;
+            float: right;
+            margin-left: 10px;
+        }
+
+        div#username {
+            background-color: lightblue;
+            padding: 0px 10px;
+            float: right;
+            display: inline;
+            img {
+                height: 20px;
+            }
+            p {
+                font-size: 15px;
+                color: black;
+                line-height: normal;
+                margin: 5px 0px;
+            }
+        }
+    }
+}
+
+
+// MENU SCSS
+
 nav > ul > li {
   display: inline-block
 }
@@ -33,5 +106,5 @@ nav li {
 }
 nav a {
   display: block;
-  
+
 }
