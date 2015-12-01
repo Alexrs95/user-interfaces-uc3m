@@ -1,6 +1,7 @@
 $dark-blue: #000E77;
 $light-blue: #E8EDF6;
 $orange: #DF9F00;
+$light-grey: #F7F7F7;
 
 $font-stack: Helvetica, sans-serif;
 /* Commot attrs for paragraphs */
@@ -10,9 +11,14 @@ p {
     text-justify: inter-word;
 }
 
+/* Common attrs for first-level titles */
+h1 {
+    text-transform: uppercase;
+    font-family : Helvetica;
+}
+
 /* Common attrs for second-level titles */
 h2 {
-    text-transform: uppercase;
     font-family : Helvetica;
 }
 
@@ -59,13 +65,18 @@ body {
         #news{
 
             article{
-                height: 200px;
                 clear: both;
-                padding-bottom: 60px;
+                padding: 20px;
+                margin-bottom: 20px;
+                background-color: $light-blue;
+                border: 2px solid $dark-blue;
+                border-radius: 20px;
 
                 img{
                     float: left;
                     width: 40%;
+                    // max-width:100%;
+                    // max-height:100%;
                     padding-right: 30px;
                 }
             }
@@ -75,6 +86,18 @@ body {
     #right-pannel {
         width: 25%;
         float: right;
+        background-color: $light-grey;
+        border-radius: 5px;
+        border: 2px solid transparentize($orange, 0.5);
+        padding: 10px;
+
+        #calendar{
+            padding: 20px;
+        }
+
+        #apps{
+            padding: 20px;
+        }
     }
 
 }

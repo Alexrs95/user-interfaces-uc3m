@@ -4,9 +4,13 @@ p {
   text-align: justify;
   text-justify: inter-word; }
 
+/* Common attrs for first-level titles */
+h1 {
+  text-transform: uppercase;
+  font-family: Helvetica; }
+
 /* Common attrs for second-level titles */
 h2 {
-  text-transform: uppercase;
   font-family: Helvetica; }
 
 nav > ul > li {
@@ -45,15 +49,26 @@ body {
     width: 70%;
     float: left; }
     body #content #news article {
-      height: 200px;
       clear: both;
-      padding-bottom: 60px; }
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #E8EDF6;
+      border: 2px solid #000E77;
+      border-radius: 20px; }
       body #content #news article img {
         float: left;
         width: 40%;
         padding-right: 30px; }
   body #right-pannel {
     width: 25%;
-    float: right; }
+    float: right;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    border: 2px solid rgba(223, 159, 0, 0.5);
+    padding: 10px; }
+    body #right-pannel #calendar {
+      padding: 20px; }
+    body #right-pannel #apps {
+      padding: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
