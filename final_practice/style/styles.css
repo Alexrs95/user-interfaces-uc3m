@@ -1,3 +1,14 @@
+/* Commot attrs for paragraphs */
+p {
+  font-family: Helvetica;
+  text-align: justify;
+  text-justify: inter-word; }
+
+/* Common attrs for second-level titles */
+h2 {
+  text-transform: uppercase;
+  font-family: Helvetica; }
+
 nav > ul > li {
   display: inline-block; }
 
@@ -26,5 +37,23 @@ nav li {
 
 nav a {
   display: block; }
+
+body {
+  width: 70%;
+  margin: auto; }
+  body #content {
+    width: 70%;
+    float: left; }
+    body #content #news article {
+      height: 200px;
+      clear: both;
+      padding-bottom: 60px; }
+      body #content #news article img {
+        float: left;
+        width: 40%;
+        padding-right: 30px; }
+  body #right-pannel {
+    width: 25%;
+    float: right; }
 
 /*# sourceMappingURL=styles.css.map */

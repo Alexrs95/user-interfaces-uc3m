@@ -3,6 +3,18 @@ $light-blue: #E8EDF6;
 $orange: #DF9F00;
 
 $font-stack: Helvetica, sans-serif;
+/* Commot attrs for paragraphs */
+p {
+    font-family: Helvetica;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Common attrs for second-level titles */
+h2 {
+    text-transform: uppercase;
+    font-family : Helvetica;
+}
 
 nav > ul > li {
   display: inline-block
@@ -33,5 +45,36 @@ nav li {
 }
 nav a {
   display: block;
-  
+
+}
+
+body {
+    width: 70%;
+    margin: auto;
+
+    #content {
+        width: 70%;
+        float: left;
+
+        #news{
+
+            article{
+                height: 200px;
+                clear: both;
+                padding-bottom: 60px;
+
+                img{
+                    float: left;
+                    width: 40%;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+
+    #right-pannel {
+        width: 25%;
+        float: right;
+    }
+
 }
