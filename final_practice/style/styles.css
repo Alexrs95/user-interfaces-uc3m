@@ -52,9 +52,7 @@ body {
       clear: both;
       padding: 20px;
       margin-bottom: 20px;
-      background-color: #E8EDF6;
-      border: 2px solid #000E77;
-      border-radius: 20px; }
+      background-color: #E8EDF6; }
       body #content #news article img {
         float: left;
         width: 40%;
@@ -64,7 +62,7 @@ body {
     float: right;
     background-color: #F7F7F7;
     border-radius: 5px;
-    border: 2px solid rgba(223, 159, 0, 0.5);
+    border: 2px solid #000E77;
     padding: 10px; }
     body #right-pannel #calendar {
       padding: 20px; }
