@@ -3,13 +3,76 @@ $light-blue: #E8EDF6;
 $orange: #DF9F00;
 $grey: #CECECE;
 
-$font-stack: Helvetica, sans-serif;
+$font-stack: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+}
 
 nav { 
+  padding-left: 100px;
   font-family: $font-stack;
   list-style-type: none;
-  height: 40px; padding: 0;
+  height: 50px;
   margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  background: $dark-blue;
+
+    .container {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    .icon{
+      position: absolute;
+      margin-left: 40px;
+      margin-top: 18px;
+      z-index: 1;
+      color: #4f5b66;
+    }
+
+    input.search:hover, input.search:focus, input.search:active{
+      outline:none;
+      background: #ffffff;
+    }
+
+    input.search{
+      margin-top: 10px;
+      margin-left: 30px; 
+      height: 30px;
+      background: $light-blue;
+      border: none;
+      font-size: 10pt;
+      padding: 0px 30px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+
+      ::-webkit-input-placeholder {
+         color: #65737e;
+      }
+
+      :-moz-placeholder { /* Firefox 18- */
+         color: #65737e;  
+      }
+
+      ::-moz-placeholder {  /* Firefox 19+ */
+         color: #65737e;  
+      }
+   
+    }
+  }
 
   li {
     transition: all 0.2s ease;
@@ -17,9 +80,8 @@ nav {
     -moz-transition: all 0.2s ease;
     float: left;
     position: relative;
-    padding: 0;
-    line-height: 40px;
-    background: $grey;
+    padding-left: 20px;
+    line-height: 50px;
 
     a {
       transition: all 0.5s ease;
@@ -27,12 +89,12 @@ nav {
       -moz-transition: all 0.5s ease;
       display: block;
       padding: 0 15px; 
-      color: $dark-blue; 
+      color: $grey; 
       text-decoration: none;
     }
 
     a:hover {
-      color: $light-blue;
+      color: white;
     }
 
     ul {
@@ -43,7 +105,7 @@ nav {
       position: absolute;
       left: 0;
       width: 8em;
-      background: $grey;
+      background: $dark-blue;
       list-style-type: none;
       padding: 0;
       margin: 0;
@@ -55,15 +117,8 @@ nav {
         float: none;
         position: static;
         height: 0;
-        line-height: 0;background: none;
-
-        a {
-          background: $grey;
-        }
-
-        a:hover {
-          background: $grey;
-        }   
+        line-height: 0;
+        background: none;  
       }
     }
   }
@@ -73,11 +128,32 @@ nav {
 
     ul {
       opacity: 1;
-
-      li{
+      li {
         height: 30px;
         line-height: 30px;
       }
     }
   }
+}
+
+.tt-suggestion {
+  background: $light-blue;
+  padding: 5px 20px;
+  margin-left: 50px; 
+  font-size: 1.2em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.tt-dataset {
+  margin-top: 10px;
+}
+
+.tt-highlight{
+  color: $dark-blue;
+}
+
+.tt-hint {
+  color: $dark-blue;
 }
