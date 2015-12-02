@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+div#content-wrap {
+    width: 700px;
+    height: 1000px;
+    margin: auto;
+}
+
+div#header {
+    width: 1050px;
+    height: 150px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: rgb(2, 17, 121);
+}
+
+img#logo-big {
+    display: inline;
+    float: left;
+    /*padding: 20px;
+    padding-right: 0px;*/
+}
+
+div#header span {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    display: none;
+}
+
+/* CAMPUS GLOBAL TEXT */
+
+div#campus_global {
+    display: inline;
+    margin-left: 12%;
+    margin-top: 300px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/*div#campus_global h1 {
+    line-height: 100px;
+    /*text-align: center;
+    color: white;
+}*/
+
+/* LANGUAGE PICKER */
+
+div#lang-pick {
+    display: inline;
+    margin: 10px 20px;
+    background-color: white;
+    height: 22px;
+    width: 50px;
+    text-align: center;
+    padding: 0px;
+    float: right;
+}
+div#lang-pick p {
+    margin: 0px;
+    padding: 0px;
+}
+div#lang-pick a {
+    text-decoration: none;
+    color: black;
+}
+div#lang-pick img {
+    height: 20px;
+    display: inline;
+}
+
+/* LOGOUT BUTTON AND USERNAME BOX */
+
+img#logout {
+    float: right;
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+div#username {
+    width: 170px;
+    height: 35px;
+    background-color: lightblue;
+    padding: 0px 10px;
+    margin-top: 32px;
+    float: right;
+    display: inline;
+}
+div#username img {
+    height: 20px;
+}
+div#username p {
+    font-size: 15px;
+    color: black;
+    line-height: normal;
+    margin: 5px 0px;
+}

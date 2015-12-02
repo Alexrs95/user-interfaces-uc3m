@@ -1,42 +1,184 @@
 $dark-blue: #000E77;
 $light-blue: #E8EDF6;
 $orange: #DF9F00;
-$font-stack: Helvetica, sans-serif;
+$grey: #CECECE;
 
-* {
-    box-sizing:border-box;
-}
-nav > ul > li {
-  display: inline-block
-}
-nav > ul > li ul {
-  visibility: hidden;
-  position: absolute;
-  top: 105%;
-  left: 0;
-  transition: 0.2s 0.1s;
-}
+$font-stack: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-nav > ul > li:hover ul {
-  visibility: visible;
-  transition-delay: 0s;
-}
-nav ul {
-  list-style: none;
+body {
   padding: 0;
   margin: 0;
+  font-family: $font-stack;
 }
-nav li {
-  width: 100px;
-  background: #eee;
-  margin: 2px;
-  position: relative;
-  padding: 10px;
+
+* {
+    box-sizing: border-box;
 }
-nav a {
-  display: block;
-  
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: $dark-blue;
+
+    img#logo-big {
+        height: 100px;
+    }
+
+    div#campus_global_text {
+        margin-bottom: 10px;
+        width: 225px;
+        height: 40px;
+        font-size: 35px;
+        color: white;
+    }
+
+    /* LOGOUT BUTTON AND USERNAME BOX */
+
+    div#profile {
+        width: 175px;
+        height: 35px;
+        margin: 10px;
+
+        img#logout {
+            height: 30px;
+        }
+
+        div#username {
+            background-color: $light-blue;
+            padding: 0px 10px;
+            float: right;
+            display: inline;
+            img {
+                height: 20px;
+            }
+            p {
+                font-size: 12px;
+                color: black;
+                margin: 5px 0px;
+            }
+        }
+    }
 }
+
+
+
+nav { 
+  padding-left: 100px;
+  list-style-type: none;
+  height: 50px;
+  background: $dark-blue;
+
+    .container {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    .icon{
+      position: absolute;
+      margin-left: 40px;
+      margin-top: 18px;
+      z-index: 1;
+      color: #4f5b66;
+    }
+
+    input.search:hover, input.search:focus, input.search:active{
+      outline:none;
+      background: #ffffff;
+    }
+
+    input.search{
+      margin-top: 10px;
+      margin-left: 30px; 
+      height: 30px;
+      background: $light-blue;
+      border: none;
+      font-size: 10pt;
+      padding: 0px 30px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+
+      ::-webkit-input-placeholder {
+         color: #65737e;
+      }
+
+      :-moz-placeholder { /* Firefox 18- */
+         color: #65737e;  
+      }
+
+      ::-moz-placeholder {  /* Firefox 19+ */
+         color: #65737e;  
+      }
+   
+    }
+  }
+
+  li {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    float: left;
+    position: relative;
+    padding-left: 20px;
+    line-height: 50px;
+
+    a {
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      display: block;
+      padding: 0 15px; 
+      color: $grey; 
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    ul {
+      transition: opacity 0.3s ease-in-out;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      width: 8em;
+      background: $dark-blue;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        transition: height 0.3s ease;
+        -webkit-transition: height 0.3s ease;
+        -moz-transition: height 0.3s ease;
+        float: none;
+        position: static;
+        height: 0;
+        line-height: 0;
+        background: none;  
+      }
+    }
+  }
+
+  li:hover {
+    background-position: 0 -40px;
+
+    ul {
+      opacity: 1;
+      li {
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
 footer {
     background-color:$dark-blue;
     height:110px;
@@ -106,4 +248,26 @@ footer {
         
     }
 
+}
+
+.tt-suggestion {
+  background: $light-blue;
+  padding: 5px 20px;
+  margin-left: 50px; 
+  font-size: 1.2em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.tt-dataset {
+  margin-top: 10px;
+}
+
+.tt-highlight{
+  color: $dark-blue;
+}
+
+.tt-hint {
+  color: $dark-blue;
 }
