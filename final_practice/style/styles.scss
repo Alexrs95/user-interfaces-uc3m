@@ -11,49 +11,36 @@ $font-stack: Helvetica, sans-serif;
 }
 
 header {
-    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
     height: 150px;
     margin: auto;
-    padding-top: 20px;
-    background-color: rgb(2, 17, 121);
+    background-color: rgb(2, 17, 120);
 
     img#logo-big {
-        display: inline;
-        float: left;
-    }
-
-    span#logo-reduced {
-        font-size: 20px;
-        color: white;
-        text-align: left;
-        display: none;
+        height: 100px;
     }
 
     div#campus_global_text {
-        display: inline;
-        align-self: center;
-        padding-top: 200px;
-        margin-left: 160px;
-        width: 100px;
+        margin-bottom: 10px;
+        width: 225px;
         height: 40px;
-        text-align: center;
         font-size: 35px;
-        color: white;
+        color: #FFFFFF;
     }
 
     /* LOGOUT BUTTON AND USERNAME BOX */
 
     div#profile {
-        width: 210px;
+        width: 175px;
         height: 35px;
-        margin-top: 32px;
-        margin-right: 20px;
-        float: right;
+        margin: 10px;
 
         img#logout {
-            height: 35px;
-            float: right;
-            margin-left: 10px;
+            height: 30px;
         }
 
         div#username {
@@ -65,9 +52,8 @@ header {
                 height: 20px;
             }
             p {
-                font-size: 15px;
+                font-size: 12px;
                 color: black;
-                line-height: normal;
                 margin: 5px 0px;
             }
         }
