@@ -30,18 +30,20 @@ header {
 
     div#campus_global_text {
         margin-bottom: 10px;
-        width: 225px;
+        width: 240px;
         height: 40px;
         font-size: 35px;
         color: white;
+        // border: 1px solid white;
     }
 
     /* LOGOUT BUTTON AND USERNAME BOX */
 
     div#profile {
-        width: 175px;
+        width: 185px;
         height: 35px;
         margin: 10px;
+        // border: 1px solid white;
 
         img#logout {
             height: 30px;
@@ -66,7 +68,7 @@ header {
 
 
 
-nav { 
+nav {
   padding-left: 100px;
   list-style-type: none;
   height: 50px;
@@ -92,7 +94,7 @@ nav {
 
     input.search{
       margin-top: 10px;
-      margin-left: 30px; 
+      margin-left: 30px;
       height: 30px;
       background: $light-blue;
       border: none;
@@ -107,13 +109,13 @@ nav {
       }
 
       :-moz-placeholder { /* Firefox 18- */
-         color: #65737e;  
+         color: #65737e;
       }
 
       ::-moz-placeholder {  /* Firefox 19+ */
-         color: #65737e;  
+         color: #65737e;
       }
-   
+
     }
   }
 
@@ -131,8 +133,8 @@ nav {
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       display: block;
-      padding: 0 15px; 
-      color: $grey; 
+      padding: 0 15px;
+      color: $grey;
       text-decoration: none;
     }
 
@@ -161,7 +163,7 @@ nav {
         position: static;
         height: 0;
         line-height: 0;
-        background: none;  
+        background: none;
       }
     }
   }
@@ -186,45 +188,45 @@ footer {
     width: 70%;
     margin:auto;
     font-family: $font-stack;
- 
+
     div{
         float:left;
-        background-color:inherit; 
+        background-color:inherit;
     }
     ul{
         vertical-align:bottom;
         list-style:none;
-        
+
         li {
             line-height:25px;
-            
+
             em{
                 font-weight:bold;
                 font-style:normal;
-            } 
+            }
             a{
                 text-decoration:none;
                 color:white;
-            } 
+            }
             a:hover{
                 text-decoration:underline;
             }
         }
-            
+
     }
     #footer-left{
         width:25%;
-    }   
+    }
     #footer-center{
         width: 41%;
         img{
             height: 15px;
             width: 25px;
-            margin-left: 15px; 
+            margin-left: 15px;
         }
     }
     #footer-right{
-        text-align: right; 
+        text-align: right;
         p#uc3m{
             em{
                 font-style:normal;
@@ -238,13 +240,13 @@ footer {
                 margin-right:15px;
                 margin-bottom: 5px;
             }
-        } 
+        }
         p#copyright{
             margin: 7px 2px 2px 0px ;
             padding:0;
             font-size:1em;
         }
-        
+
     }
 
 }
@@ -252,7 +254,7 @@ footer {
 .tt-suggestion {
   background: $light-blue;
   padding: 5px 20px;
-  margin-left: 50px; 
+  margin-left: 50px;
   font-size: 1.2em;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

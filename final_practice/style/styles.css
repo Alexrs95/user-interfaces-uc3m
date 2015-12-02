@@ -19,12 +19,12 @@ header {
     height: 100px; }
   header div#campus_global_text {
     margin-bottom: 10px;
-    width: 225px;
+    width: 240px;
     height: 40px;
     font-size: 35px;
     color: white; }
   header div#profile {
-    width: 175px;
+    width: 185px;
     height: 35px;
     margin: 10px; }
     header div#profile img#logout {
