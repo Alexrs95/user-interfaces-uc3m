@@ -1,43 +1,44 @@
 <html>
     <head>
         <link href="style/styles.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="style/unslider.css">
-        <link rel="stylesheet" href="style/unslider-dots.css">
+        <link rel="stylesheet" href="style/unslider.css" type="text/css">
+        <link rel="stylesheet" href="style/unslider-dots.css" type="text/css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="script/unslider.js" type="text/javascript"></script>
+        <script src="script/script.js" type="text/javascript"></script>
+        <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="script/jquery.sticky.js"></script>
+        <script type="text/javascript" src="script/typeahead.js/typeahead.bundle.js"></script>  <script type="text/javascript" src="script/script.js"></script>
     </head>
     <body>
-        <script src="script/jquery-2.1.4.js"></script>
-        <script src="script/unslider.js"></script>
-        <script src="script/script.js"></script>
-		<nav>
-		  <ul>
-		    <li>
-		      Dropdown
-		      <ul>
-		        <li><a href="#">One</a></li>
-		        <li><a href="#">Two</a></li>
-		        <li><a href="#">Three</a></a></li>
-		      </ul>
-		    </li>
-		    <li>
-		      Dropdown 2
-		      <ul>
-		        <li><a href="#">One</a></li>
-		        <li><a href="#">Two</a></li>
-		        <li><a href="#">Three</a></a></li>
-		      </ul>
-		    </li>
-		    <li>
-		      Dropdown 3
-		      <ul>
-		        <li><a href="#">One</a></li>
-		        <li><a href="#">Two</a></li>
-		        <li><a href="#">Three</a></a></li>
-		      </ul>
-		    </li>
-		  </ul>
+        <header>
+            <img id="logo-big" src="images/logo/uc3m.jpg" />
+            <div id="campus_global_text">Campus Global</div>
+            <div id="profile">
+                <a href="login.html"><img id="logout" src="images/icon/logout.png" alt="" /></a>
+                <div id="username">
+                    <p><img src="images/icon/user_icon.png" alt="" />Username Usurname</p>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Dropdown</a>
+            <ul>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+                <div class="box">
+                  <div class="container">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" class="search" placeholder="Search..." />
+                  </div>
+                </div>
 		</nav>
-
-        <!-- Main content of the page -->
         <main>
             <div class="my-slider">
             	<ul>
@@ -120,5 +121,30 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <div id="footer-left">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div id="footer-center">
+                <ul>
+                    <li>Language <img src="images/spanish_flag.png"></li>
+                    <li>Emergencies: 91 624 <em>99 99</em></li>
+                    <li><a href="#">Legal Information</a></li>
+               </ul>
+            </div>
+             <div id="footer-right">
+                <p id="uc3m">
+                    <a href="http://www.facebook.com/uc3m" target="_blank"><img src="images/fb_logo.png"></a>
+                    <a href="http://www.twitter.com/uc3m" target="_blank"><img src="images/twitter_logo.png"></a>
+                    <a href="http://www.youtube.com/user/uc3m" target="_blank"><img src="images/yt_logo.png"> </a>
+                    <em> UC3M</em>
+                 </p>
+                <p id="copyright">&copy 2015 Universidad Carlos III de Madrid </p>
+            </div>
+        </footer>
     </body>
 </html>
