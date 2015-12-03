@@ -206,7 +206,7 @@ footer{
     background-color:$dark-blue;
     height:110px;
     color:white;
-    width: 70%;
+    width: 100%;
     margin:auto;
     font-family: $font-stack;
 
@@ -236,17 +236,17 @@ footer{
     }
 
     #footer-left{
-        width:25%;
+
     }
     #footer-center{
-        width: 41%;
+
+        img{
             height: 15px;
             width: 25px;
             margin-left: 15px;
         }
     }
     #footer-right{
-        text-align: right;
         p#uc3m{
             margin: 10px 4px 0px 0px;
             font-family:"Times New Roman", Times, serif;
@@ -267,6 +267,7 @@ footer{
             font-size:1em;
         }
     }
+}
 
 .tt-suggestion {
   background: $light-blue;
@@ -291,48 +292,53 @@ footer{
 }
 
 body {
-    width: 70%;
-    margin: auto;
+    // width: 70%;
+    // margin: auto;
 
-    #content {
+    main {
         width: 70%;
-        float: left;
+        margin: auto;
 
-        #news{
+        #content {
+            width: 70%;
+            float: left;
 
-            article{
-                clear: both;
-                padding: 20px;
-                margin-bottom: 20px;
-                background-color: $light-blue;
-                // border: 2px solid $dark-blue;
-                // border-radius: 20px;
+            #news{
 
-                img{
-                    float: left;
-                    width: 40%;
-                    // max-width:100%;
-                    // max-height:100%;
-                    padding-right: 30px;
+                article{
+                    clear: both;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    background-color: $light-blue;
+                    // border: 2px solid $dark-blue;
+                    // border-radius: 20px;
+
+                    img{
+                        float: left;
+                        width: 40%;
+                        // max-width:100%;
+                        // max-height:100%;
+                        padding-right: 30px;
+                    }
                 }
             }
         }
-    }
 
-    #right-pannel {
-        width: 25%;
-        float: right;
-        background-color: $light-grey;
-        border-radius: 5px;
-        border: 2px solid $dark-blue;
-        padding: 10px;
+        #right-pannel {
+            width: 25%;
+            float: right;
+            background-color: $light-grey;
+            border-radius: 5px;
+            border: 2px solid $dark-blue;
+            padding: 10px;
 
-        #calendar{
-            padding: 20px;
-        }
+            #calendar{
+                padding: 20px;
+            }
 
-        #apps{
-            padding: 20px;
+            #apps{
+                padding: 20px;
+            }
         }
     }
 
