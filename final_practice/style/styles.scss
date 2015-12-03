@@ -292,12 +292,20 @@ footer{
 }
 
 body {
-    // width: 70%;
-    // margin: auto;
 
     main {
         width: 70%;
         margin: auto;
+
+        .slider{
+            li {
+
+                height: 300px;
+                img{
+                    height: 150px;
+                }
+            }
+        }
 
         #content {
             width: 70%;
