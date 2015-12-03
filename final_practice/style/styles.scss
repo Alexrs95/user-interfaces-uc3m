@@ -49,7 +49,6 @@ header {
 
     div#campus_global_text {
         margin-bottom: 10px;
-        width: 240px;
         height: 40px;
         font-size: 35px;
         color: white;
@@ -58,12 +57,11 @@ header {
     /* LOGOUT BUTTON AND USERNAME BOX */
 
     div#profile {
-        width: 185px;
         height: 35px;
-        margin: 10px;
 
         img#logout {
             height: 30px;
+            margin-right: 5px;
         }
 
         div#username {

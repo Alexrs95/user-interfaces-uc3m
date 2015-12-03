@@ -34,16 +34,14 @@ header {
     height: 100px; }
   header div#campus_global_text {
     margin-bottom: 10px;
-    width: 240px;
     height: 40px;
     font-size: 35px;
     color: white; }
   header div#profile {
-    width: 185px;
-    height: 35px;
-    margin: 10px; }
+    height: 35px; }
     header div#profile img#logout {
-      height: 30px; }
+      height: 30px;
+      margin-right: 5px; }
     header div#profile div#username {
       background-color: #E8EDF6;
       padding: 0px 10px;
