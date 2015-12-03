@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-    $('input.floatlabel').floatlabel();
-
     $("nav").sticky({topSpacing:0});
 
     var states = new Bloodhound({

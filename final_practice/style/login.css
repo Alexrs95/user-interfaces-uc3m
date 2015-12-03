@@ -1,74 +1,67 @@
-@font-face {
-  font-family: 'BebasNeueRegular';
-  src: url("fonts/BebasNeue-webfont.eot");
-  src: url("fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/BebasNeue-webfont.woff") format("woff"), url("fonts/BebasNeue-webfont.ttf") format("truetype"), url("fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 /* CSS reset */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 html, body {
   margin: 0;
   padding: 0; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-fieldset, img {
-  border: 0; }
-
-input {
-  border: 1px solid #b0b0b0;
-  padding: 3px 5px 4px;
-  color: #979797;
-  width: 190px; }
-
-address, caption, cite, code, dfn, th, var {
-  font-style: normal;
-  font-weight: normal; }
-
-ol, ul {
-  list-style: none; }
-
-caption, th {
-  text-align: left; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal; }
-
-q:before, q:after {
-  content: ''; }
-
-abbr, acronym {
-  border: 0; }
-
-/* General Demo Style */
 body {
-  font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
   background: #000;
-  font-weight: 400;
-  font-size: 15px;
-  color: #aa3e03;
   overflow-y: scroll;
   overflow-x: hidden; }
 
-.ie7 body {
-  overflow: hidden; }
-
-a {
-  color: #333;
-  text-decoration: none; }
-
 .container {
+  display: flex;
   position: relative;
+  justify-content: center;
   text-align: center; }
-
-.clr {
-  clear: both; }
+  .container #login-form {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 10%;
+    background: white;
+    width: 15%; }
+    .container #login-form img {
+      margin-bottom: 30px;
+      height: 150px;
+      width: 150px; }
+    .container #login-form input {
+      padding: 10px;
+      width: 100%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid gray;
+      outline: none; }
+    .container #login-form input:hover, .container #login-form input:active {
+      border-bottom: 2px solid #000E77; }
+    .container #login-form #pass {
+      margin-bottom: 50px; }
+    .container #login-form .button-link {
+      padding: 10px 30px;
+      background: white;
+      color: #000E77;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      border: solid 2px #000E77;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      transition-duration: 0.2s; }
+    .container #login-form .button-link:hover {
+      background: #000E77;
+      border: solid 2px #000E77;
+      color: white;
+      text-decoration: none; }
+    .container #login-form .button-link:active {
+      background: #E8EDF6;
+      border: solid 2px #000E77;
+      color: #000E77; }
 
 .container > header {
   padding: 30px 30px 10px 20px;
@@ -79,7 +72,6 @@ a {
   text-align: left; }
 
 .container > header h1 {
-  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
   font-size: 35px;
   line-height: 35px;
   position: relative;
@@ -174,15 +166,5 @@ p.codrops-demos a.current-demo,
 p.codrops-demos a.current-demo:hover {
   color: #A5727D;
   background: #6d0019; }
-
-/* Media Queries */
-@media screen and (max-width: 767px) {
-  .container > header {
-    text-align: center; }
-
-  p.codrops-demos {
-    position: relative;
-    top: auto;
-    left: auto; } }
 
 /*# sourceMappingURL=login.css.map */

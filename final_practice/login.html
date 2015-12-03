@@ -4,8 +4,11 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" type="text/css" href="style/login.css" />
         <link rel="stylesheet" type="text/css" href="style/style1.css" />
+        <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="script/modernizr.custom.86080.js"></script>
 		<script type="text/javascript" src="script/floatlabels.js"></script>
+		<script type="text/javascript" src="script/login.js"></script>
+
     </head>
     <body id="page">
         <ul class="cb-slideshow">
@@ -16,17 +19,17 @@
             <li><span>Image 05</span></li>
             <li><span>Image 06</span></li>
         </ul>
-        <main>
-        	<div>
-        		<img src="images/logouc3m.png">
+        <main class="container">
+        	<div id="login-form">
+        		<img src="images/uc3mlogo.png">
                 <div>
-                    <input id="surname" type="text" placeholder="Surname*" class="floatlabel">
+                    <input id="NIA" type="text" placeholder="NIA" class="floatlabel" autocomplete="off">
                 </div>
                 <br>
                 <div>
-                    <input id="email" type="text" placeholder="Email*" class="floatlabel" data-class="mail-label">
+                    <input id="pass" type="password" placeholder="Password" class="floatlabel">
                 </div>
-        		<a></a>
+        		<a class="button-link">Log in</a>
         	</div>
         </main>
     </body>
