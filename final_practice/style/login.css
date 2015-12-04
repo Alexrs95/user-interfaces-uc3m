@@ -52,7 +52,8 @@ body {
       border: solid 2px #000E77;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      transition-duration: 0.2s; }
+      transition-duration: 0.2s;
+      text-decoration: none; }
     .container #login-form .button-link:hover {
       background: #000E77;
       border: solid 2px #000E77;

@@ -12,7 +12,6 @@ $(document).ready(function(){
         $('#card_form').slideUp();
     });
 
-
     $('#submit').click(function() {
 
         var isValid = true;
@@ -43,7 +42,6 @@ $(document).ready(function(){
             isValid = false;
             $("#email").css({'border-color': 'red'});
             $("label.mail-label").css({'color' : 'red'})
-
         };
 
         address = $('#address').val();
