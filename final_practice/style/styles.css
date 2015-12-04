@@ -1,3 +1,18 @@
+/* Commot attrs for paragraphs */
+p {
+  font-family: Helvetica;
+  text-align: justify;
+  text-justify: inter-word; }
+
+/* Common attrs for first-level titles */
+h1 {
+  text-transform: uppercase;
+  font-family: Helvetica; }
+
+/* Common attrs for second-level titles */
+h2 {
+  font-family: Helvetica; }
+
 body {
   padding: 0;
   margin: 0;
@@ -9,7 +24,7 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   height: 150px;
@@ -19,12 +34,12 @@ header {
     height: 100px; }
   header div#campus_global_text {
     margin-bottom: 10px;
-    width: 225px;
+    width: 240px;
     height: 40px;
     font-size: 35px;
     color: white; }
   header div#profile {
-    width: 175px;
+    width: 185px;
     height: 35px;
     margin: 10px; }
     header div#profile img#logout {
@@ -126,10 +141,13 @@ nav {
         line-height: 30px; }
 
 footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background-color: #000E77;
   height: 110px;
   color: white;
-  width: 70%;
+  width: 100%;
   margin: auto;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   footer div {
@@ -148,31 +166,25 @@ footer {
         color: white; }
       footer ul li a:hover {
         text-decoration: underline; }
-  footer #footer-left {
-    width: 25%; }
-  footer #footer-center {
-    width: 41%; }
-    footer #footer-center img {
-      height: 15px;
-      width: 25px;
-      margin-left: 15px; }
-  footer #footer-right {
-    text-align: right; }
-    footer #footer-right p#uc3m {
-      margin: 10px 4px 0px 0px;
-      font-family: "Times New Roman", Times, serif; }
-      footer #footer-right p#uc3m em {
-        font-style: normal;
-        font-size: 3em; }
-      footer #footer-right p#uc3m img {
-        height: 25px;
-        width: 30px;
-        margin-right: 15px;
-        margin-bottom: 5px; }
-    footer #footer-right p#copyright {
-      margin: 7px 2px 2px 0px;
-      padding: 0;
-      font-size: 1em; }
+  footer #footer-center img {
+    height: 15px;
+    width: 25px;
+    margin-left: 15px; }
+  footer #footer-right p#uc3m {
+    margin: 10px 4px 0px 0px;
+    font-family: "Times New Roman", Times, serif; }
+    footer #footer-right p#uc3m em {
+      font-style: normal;
+      font-size: 3em; }
+    footer #footer-right p#uc3m img {
+      height: 25px;
+      width: 30px;
+      margin-right: 15px;
+      margin-bottom: 5px; }
+  footer #footer-right p#copyright {
+    margin: 7px 2px 2px 0px;
+    padding: 0;
+    font-size: 1em; }
 
 .tt-suggestion {
   background: #E8EDF6;
@@ -191,5 +203,32 @@ footer {
 
 .tt-hint {
   color: #000E77; }
+
+body main {
+  width: 70%;
+  margin: auto; }
+  body main #content {
+    width: 70%;
+    float: left; }
+    body main #content #news article {
+      clear: both;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #E8EDF6; }
+      body main #content #news article img {
+        float: left;
+        width: 40%;
+        padding-right: 30px; }
+  body main #right-pannel {
+    width: 25%;
+    float: right;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    border: 2px solid #000E77;
+    padding: 10px; }
+    body main #right-pannel #calendar {
+      padding: 20px; }
+    body main #right-pannel #apps {
+      padding: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
