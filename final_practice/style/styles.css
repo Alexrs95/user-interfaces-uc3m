@@ -205,6 +205,7 @@ footer {
   color: #000E77; }
 
 body main {
+  padding-top: 30px;
   width: 70%;
   margin: auto; }
   body main #content {
