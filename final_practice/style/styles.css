@@ -207,10 +207,6 @@ footer {
 body main {
   width: 70%;
   margin: auto; }
-  body main .slider li {
-    height: 300px; }
-    body main .slider li img {
-      height: 150px; }
   body main #content {
     width: 70%;
     float: left; }

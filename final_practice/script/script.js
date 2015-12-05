@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
         $("nav").sticky({topSpacing:0});
+        $('.flexslider').flexslider({
+            animation: "slide",
+            keyboard: true
+        });
 
         var states = new Bloodhound({
           datumTokenizer: Bloodhound.tokenizers.whitespace,
@@ -58,6 +62,7 @@ $(document).ready(function(){
             'Wyoming'
           ]
         });
+
         states.initialize();
         $('.search').typeahead({
           highlight: true
