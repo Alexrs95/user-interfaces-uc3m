@@ -212,6 +212,8 @@ body main {
   body main #content {
     width: 70%;
     float: left; }
+    body main #content .flexslider {
+      z-index: -1; }
     body main #content #news article {
       clear: both;
       padding: 20px;

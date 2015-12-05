@@ -301,6 +301,10 @@ body {
             width: 70%;
             float: left;
 
+            .flexslider {
+              z-index: -1;
+            }
+
             #news{
 
                 article{
