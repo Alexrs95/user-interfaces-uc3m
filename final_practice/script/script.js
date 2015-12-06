@@ -70,50 +70,33 @@ $(document).ready(function(){
 });
 
 
-$(function() { // document ready
+$(document).ready(function() {
 
-  $('#calendar').fullCalendar({
-    header: {
-        right: 'prev, next'
-    },
+	$('#calendar').fullCalendar({
+        theme: true,
+		header: {
+    			right: 'prev,next'
+		},
+		defaultDate: '2015-12-12',
+		eventLimit: true,
+        titleFormat: 'MMM YYYY',
+        firstDay: 1,
+        dayNamesShort:['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+        fixedWeekCount: false, // allow "more" link when too many events
+		events: [
+			{
+				title: 'All Day Event',
+                start: moment('2015-12-07').format('YYYY-MM-DD'),
+                rendering:'background'
+			},
+			{
+				title: 'Long Event',
+                start: moment('2015-12-11').format('YYYY-MM-DD'),
+                end: moment('2015-12-13').format('YYYY-MM-DD'),
+                rendering:'background'
+			},
 
-    columnFormat: {
-                month: 'ddd'
-    },
-
-    prev: 'circle-triangle-w',
-    next: 'circle-triangle-e',
-    titleFormat: 'MMM YY',
-    defaultDate: '2015-12-5',
-    eventLimit: true,
-    weekends: true,
-    firstDay: 1,
-    theme: false,
-    dayNamesShort:['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-    fixedWeekCount: false,
-
-    Object, default:
-    {
-        prev: 'right-single-arrow',
-        next: 'right-single-arrow',
-        prevYear: 'left-double-arrow',
-        nextYear: 'right-double-arrow'
-    },
-
-    events: [
-      {
-        title: 'Long Event',
-        start: '2015-12-07',
-        end: '2015-12-09',
-        rendering: 'background'
-      },
-      {
-        title: 'Dinner',
-        start: '2015-12-11',
-        end: '2015-12-11',
-        rendering: 'background'
-      }
-    ]
-  });
+		],
+	});
 
 });
