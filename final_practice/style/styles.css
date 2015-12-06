@@ -60,6 +60,7 @@ nav {
   padding-left: 100px;
   list-style-type: none;
   height: 50px;
+  z-index: 6;
   background: #000E77; }
   nav .container {
     width: 300px;
