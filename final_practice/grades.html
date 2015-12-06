@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="style/styles.css" rel="stylesheet" type="text/css" />
+        <link href="style/grades.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="style/fullcalendar.css" type="text/css">
+        <link rel="stylesheet" href="style/fullcalendar.print.css" type="text/css"  media='print'>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="script/moment.min.js" ></script>
+        <script type="text/javascript" src="script/fullcalendar.min.js" ></script>
+        <script type="text/javascript" src="script/jquery.sticky.js"></script>
+        <script type="text/javascript" src="script/typeahead.js/typeahead.bundle.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript" src="script/grades.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <img id="logo-big" src="images/logo/uc3m.jpg" />
+            <div id="campus_global_text">Campus Global</div>
+            <div id="profile">
+                <a href="login.html"><img id="logout" src="images/icon/logout.png" alt="" /></a>
+                <div id="username">
+                    <p><img src="images/icon/user_icon.png" alt="" />Username Usurname</p>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Dropdown</a>
+            <ul>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+                <div class="box">
+                  <div class="container">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" class="search" placeholder="Search..." />
+                  </div>
+                </div>
+		    </nav>
+        <main>
+            <div id="content">
+
+                <h2> Query my Grade Point Average: </h2>
+
+                <table id="grades">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>GPA</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Weighted</td>
+                            <td id="mark">8.9</td>
+                            <td>Lorem Ipsum you already know this</td>
+                        </tr>
+                        <tr>
+                            <td>Non-Weighted</td>
+                            <td id="mark">8.9</td>
+                            <td>Lorem Ipsum you already know this too</td>
+                        </tr>
+                        <tr>
+                            <td>0-4 GPA</td>
+                            <td id="mark">3.28</td>
+                            <td>This one is particularly unfair</td>
+                        </tr>
+                  </tbody>
+                </table>
+
+                <div id="more">
+                    <h3>More about Grade Point Average:</h3>
+                        <ul>
+                            <li> <a href="#">How are my grades computed?</a>
+                            <li> <a href="#">More information about the next GPA computation</a>
+                            <li> <a href="#">Query my academic record.</a>
+                            <li> <a href="#">Send an email to the Student's Office</a>
+                        </ul>
+                </div>
+            </div>
+
+            <div id = "right-pannel">
+
+                <div id='calendar'>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-left">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div id="footer-center">
+                <ul>
+                    <li>Language <img src="images/spanish_flag.png"></li>
+                    <li>Emergencies: 91 624 <em>99 99</em></li>
+                    <li><a href="#">Legal Information</a></li>
+               </ul>
+            </div>
+             <div id="footer-right">
+                <p id="uc3m">
+                    <a href="http://www.facebook.com/uc3m" target="_blank"><img src="images/fb_logo.png"></a>
+                    <a href="http://www.twitter.com/uc3m" target="_blank"><img src="images/twitter_logo.png"></a>
+                    <a href="http://www.youtube.com/user/uc3m" target="_blank"><img src="images/yt_logo.png"> </a>
+                    <em> UC3M</em>
+                 </p>
+                <p id="copyright">&copy 2015 Universidad Carlos III de Madrid </p>
+            </div>
+        </footer>
+    </body>
+</html>
