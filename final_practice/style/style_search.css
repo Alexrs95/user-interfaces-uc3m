@@ -218,16 +218,15 @@ body main {
       background-color: #E8EDF6; }
       body main #content #news article .article-img {
         width: 200px;
-        align-self: center; }
-      body main #content #news article .article-text {
-        width: 430px; }
-        body main #content #news article .article-text a {
-          text-decoration: none;
-          color: black; }
-        body main #content #news article .article-text img.pdf {
-          height: 35px; }
-        body main #content #news article .article-text a:hover {
-          text-decoration: underline; }
+        align-self: center;
+        padding: 20px; }
+      body main #content #news article .article-text a {
+        text-decoration: none;
+        color: black; }
+      body main #content #news article .article-text img.pdf {
+        height: 35px; }
+      body main #content #news article .article-text a:hover {
+        text-decoration: underline; }
   body main #right-pannel {
     width: 270px;
     float: right;
