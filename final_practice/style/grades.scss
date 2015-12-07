@@ -5,7 +5,7 @@ $light-grey: #F7F7F7;
 $grey: #CECECE;
 
 #grades {
-  font-family: 'Arial';
+  font-family: 'Helvetica';
   margin: 25px auto;
   border-collapse: collapse;
   border: 1px solid #eee;
@@ -30,6 +30,7 @@ $grey: #CECECE;
     border-collapse: collapse;
     text-align: center;
   }
+
   th {
     background: $dark-blue;
     color: #fff;
@@ -43,6 +44,10 @@ $grey: #CECECE;
     td{
         padding-top: 30px;
         padding-bottom: 30px;
+        .GPA{
+            color: red;
+            font-weight: bold;
+        }
     }
 }
 

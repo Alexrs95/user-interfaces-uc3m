@@ -1,5 +1,5 @@
 #grades {
-  font-family: 'Arial';
+  font-family: 'Helvetica';
   margin: 25px auto;
   border-collapse: collapse;
   border: 1px solid #eee;
@@ -25,6 +25,9 @@
   #grades td {
     padding-top: 30px;
     padding-bottom: 30px; }
+    #grades td .GPA {
+      color: red;
+      font-weight: bold; }
 
 #more {
   margin-top: 80px;
