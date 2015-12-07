@@ -1,6 +1,5 @@
 article {
   display: flex;
-  height: 180px;
   justify-content: space-between; }
   article .article-img {
     width: 200px;
