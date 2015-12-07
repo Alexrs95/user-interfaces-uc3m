@@ -81,11 +81,12 @@ header {
     }
 }
 
+
+
 nav {
   padding-left: 100px;
   list-style-type: none;
   height: 50px;
-  z-index: 6;
   background: $dark-blue;
 
     .container {
@@ -291,51 +292,58 @@ footer{
 body {
 
     main {
-        padding-top: 30px;
-        width: 70%;
+        width: 1000px;
         margin: auto;
 
         #content {
-            width: 70%;
+            width: 700px;
             float: left;
-
-            .flexslider {
-              z-index: -1;
-            }
 
             #news{
 
                 article{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 180px;
                     clear: both;
                     padding: 20px;
                     margin-bottom: 20px;
                     background-color: $light-blue;
-                    // border: 2px solid $dark-blue;
-                    // border-radius: 20px;
 
-                    img{
-                        float: left;
-                        width: 40%;
-                        // max-width:100%;
-                        // max-height:100%;
-                        padding-right: 30px;
+                    .article-img {
+                        width: 200px;
+                        align-self: center;
+                    }
+
+                    .article-text {
+                        width: 430px;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        img.pdf {
+                            height: 35px;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
         }
 
         #right-pannel {
-            width: 25%;
+            width: 270px;
             float: right;
+            margin-top: 67px;
+            margin-bottom: 30px;
             background-color: $light-grey;
             border-radius: 5px;
             border: 2px solid $dark-blue;
             padding: 10px;
-            height: 300px;
 
-            #calendar {
-                margin: 0 auto;
-                max-width: 170px;
+            #calendar{
+                padding: 20px;
             }
 
             #apps{
@@ -343,4 +351,5 @@ body {
             }
         }
     }
+
 }

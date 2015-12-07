@@ -58,7 +58,6 @@ nav {
   padding-left: 100px;
   list-style-type: none;
   height: 50px;
-  z-index: 6;
   background: #000E77; }
   nav .container {
     width: 300px;
@@ -204,35 +203,43 @@ footer {
   color: #000E77; }
 
 body main {
-  padding-top: 30px;
-  width: 70%;
+  width: 1000px;
   margin: auto; }
   body main #content {
-    width: 70%;
+    width: 700px;
     float: left; }
-    body main #content .flexslider {
-      z-index: -1; }
     body main #content #news article {
+      display: flex;
+      justify-content: space-between;
+      height: 180px;
       clear: both;
       padding: 20px;
       margin-bottom: 20px;
       background-color: #E8EDF6; }
-      body main #content #news article img {
-        float: left;
-        width: 40%;
-        padding-right: 30px; }
+      body main #content #news article .article-img {
+        width: 200px;
+        align-self: center; }
+      body main #content #news article .article-text {
+        width: 430px; }
+        body main #content #news article .article-text a {
+          text-decoration: none;
+          color: black; }
+        body main #content #news article .article-text img.pdf {
+          height: 35px; }
+        body main #content #news article .article-text a:hover {
+          text-decoration: underline; }
   body main #right-pannel {
-    width: 25%;
+    width: 270px;
     float: right;
+    margin-top: 67px;
+    margin-bottom: 30px;
     background-color: #F7F7F7;
     border-radius: 5px;
     border: 2px solid #000E77;
-    padding: 10px;
-    height: 300px; }
+    padding: 10px; }
     body main #right-pannel #calendar {
-      margin: 0 auto;
-      max-width: 170px; }
+      padding: 20px; }
     body main #right-pannel #apps {
       padding: 20px; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style_search.css.map */

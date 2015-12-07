@@ -169,7 +169,6 @@ NOTE: use percentage font sizes or else old IE chokes
 	/* dimensions */
 	margin: 0;
 	height: 1.7em;
-	width: 1.7em;
 	padding: 0;
 
 	/* text & cursor */
@@ -831,7 +830,7 @@ a.fc-more:hover {
 }
 
 .fc-agenda-view .fc-day-grid .fc-row {
-	height: 5px; /* all-day section will never get shorter than this */
+	min-height: 3em; /* all-day section will never get shorter than this */
 }
 
 .fc-agenda-view .fc-day-grid .fc-row .fc-content-skeleton {
