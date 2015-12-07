@@ -38,21 +38,40 @@ header {
     font-size: 35px;
     color: white; }
   header div#profile {
-    height: 35px; }
+    display: inline; }
+    header div#profile p {
+      float: left;
+      font-size: 0.8em;
+      color: #E8EDF6;
+      margin: 5px 10px; }
+    header div#profile .button-link {
+      padding: 5px 20px;
+      background: #000E77;
+      color: white;
+      font-size: 0.8em;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      border: solid 1px white;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      text-decoration: none; }
+    header div#profile .button-link:hover {
+      background: #E8EDF6;
+      border: solid 1px #E8EDF6;
+      color: #000E77;
+      text-decoration: none; }
+    header div#profile .button-link:active {
+      background: #000E77;
+      border: solid 1px #E8EDF6;
+      color: #000E77; }
     header div#profile img#logout {
       height: 30px;
       margin-right: 5px; }
-    header div#profile div#username {
-      background-color: #E8EDF6;
-      padding: 0px 10px;
-      float: right;
-      display: inline; }
-      header div#profile div#username img {
-        height: 20px; }
-      header div#profile div#username p {
-        font-size: 12px;
-        color: black;
-        margin: 5px 0px; }
+
+#sticky-wrapper {
+  z-index: 10; }
 
 nav {
   padding-left: 100px;
@@ -111,6 +130,7 @@ nav {
     nav li a:hover {
       color: white; }
     nav li ul {
+      z-index: 1;
       transition: opacity 0.3s ease-in-out;
       -webkit-transition: opacity 0.3s ease-in-out;
       -moz-transition: opacity 0.3s ease-in-out;
@@ -211,7 +231,7 @@ body main {
     width: 70%;
     float: left; }
     body main #content .flexslider {
-      z-index: -1; }
+      z-index: 0; }
     body main #content #news {
       margin-bottom: 60px; }
       body main #content #news article {
@@ -221,7 +241,7 @@ body main {
         background-color: #E8EDF6; }
         body main #content #news article img {
           float: left;
-          width: 30%;
+          width: 40%;
           padding-right: 30px; }
     body main #content .button-link {
       margin-left: 40%;
