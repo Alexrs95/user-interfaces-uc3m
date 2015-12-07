@@ -1,14 +1,23 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <link href="style/styles.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="style/unslider.css" type="text/css">
-        <link rel="stylesheet" href="style/unslider-dots.css" type="text/css">
+        <meta charset="utf-8" />
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <script src="script/unslider.js" type="text/javascript"></script>
-        <script src="script/script.js" type="text/javascript"></script>
+        <link href="style/styles.css" rel="stylesheet" type="text/css" />
+        <link href="style/flexslider.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style/fullcalendar.css" type="text/css">
+        <link rel="stylesheet" href="style/fullcalendar.print.css" type="text/css"  media='print'>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="http://fullcalendar.io/js/fullcalendar-2.5.0/lib/cupertino/jquery-ui.min.css" rel="stylesheet">
+
         <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="script/moment.min.js" ></script>
+        <script type="text/javascript" src="script/fullcalendar.min.js" ></script>
         <script type="text/javascript" src="script/jquery.sticky.js"></script>
-        <script type="text/javascript" src="script/typeahead.js/typeahead.bundle.js"></script>  <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript" src="script/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="script/typeahead.js/typeahead.bundle.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+
     </head>
     <body>
         <header>
@@ -38,17 +47,28 @@
                     <input type="search" class="search" placeholder="Search..." />
                   </div>
                 </div>
-		</nav>
+		    </nav>
         <main>
-            <div class="my-slider">
-            	<ul>
-            		<li>My slide</li>
-            		<li>Another slide</li>
-            		<li>My last slide</li>
-            	</ul>
-            </div>
-
             <div id="content">
+                <div class="flexslider">
+                      <ul class="slides">
+                          <li>
+                              <img src="images/kitty1.jpg" alt="img 1"/>
+                              <p class="flex-caption">Title 1</p>
+                          </li>
+
+                          <li>
+                              <img src="images/kitty1.jpg" alt="img 1"/>
+                              <p class="flex-caption">Title 2</p>
+                          </li>
+
+                          <li>
+                              <img src="images/kitty1.jpg" alt="img 1"/>
+                              <p class="flex-caption">Title 3</p>
+                          </li>
+                          
+                      </ul>
+                    </div>
             <section id="news">
                 <h1>News</h1>
                 <article>
@@ -96,28 +116,8 @@
             </div>
 
             <div id = "right-pannel">
-                <div id="calendar">
-                    Calendar?
-                </div>
-                <div id="apps">
-                    <h2>UC3M Apps</h2>
-                    <ul>
-                        <li>
-                            <a href="#">App 1</a>
-                        </li>
 
-                        <li>
-                            <a href="#">App 2</a>
-                        </li>
-
-                        <li>
-                            <a href="#">App 3</a>
-                        </li>
-
-                        <li>
-                            <a href="#">App 4</a>
-                        </li>
-                    </ul>
+                <div id='calendar'>
                 </div>
             </div>
         </main>

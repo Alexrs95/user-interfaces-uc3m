@@ -58,6 +58,7 @@ nav {
   padding-left: 100px;
   list-style-type: none;
   height: 50px;
+  z-index: 6;
   background: #000E77; }
   nav .container {
     width: 300px;
@@ -203,11 +204,14 @@ footer {
   color: #000E77; }
 
 body main {
+  padding-top: 30px;
   width: 70%;
   margin: auto; }
   body main #content {
     width: 70%;
     float: left; }
+    body main #content .flexslider {
+      z-index: -1; }
     body main #content #news article {
       clear: both;
       padding: 20px;
@@ -223,9 +227,11 @@ body main {
     background-color: #F7F7F7;
     border-radius: 5px;
     border: 2px solid #000E77;
-    padding: 10px; }
+    padding: 10px;
+    height: 300px; }
     body main #right-pannel #calendar {
-      padding: 20px; }
+      margin: 0 auto;
+      max-width: 170px; }
     body main #right-pannel #apps {
       padding: 20px; }
 

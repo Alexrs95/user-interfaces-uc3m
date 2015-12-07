@@ -81,12 +81,11 @@ header {
     }
 }
 
-
-
 nav {
   padding-left: 100px;
   list-style-type: none;
   height: 50px;
+  z-index: 6;
   background: $dark-blue;
 
     .container {
@@ -290,16 +289,19 @@ footer{
 }
 
 body {
-    // width: 70%;
-    // margin: auto;
 
     main {
+        padding-top: 30px;
         width: 70%;
         margin: auto;
 
         #content {
             width: 70%;
             float: left;
+
+            .flexslider {
+              z-index: -1;
+            }
 
             #news{
 
@@ -329,9 +331,11 @@ body {
             border-radius: 5px;
             border: 2px solid $dark-blue;
             padding: 10px;
+            height: 300px;
 
-            #calendar{
-                padding: 20px;
+            #calendar {
+                margin: 0 auto;
+                max-width: 170px;
             }
 
             #apps{
@@ -339,5 +343,4 @@ body {
             }
         }
     }
-
 }
