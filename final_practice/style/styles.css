@@ -229,7 +229,8 @@ body main {
   margin: auto; }
   body main #content {
     width: 70%;
-    float: left; }
+    float: left;
+    margin-bottom: 60px; }
     body main #content .flexslider {
       z-index: 0; }
     body main #content #news {
@@ -241,7 +242,7 @@ body main {
         background-color: #E8EDF6; }
         body main #content #news article img {
           float: left;
-          width: 40%;
+          height: 120px;
           padding-right: 30px; }
     body main #content .button-link {
       margin-left: 40%;

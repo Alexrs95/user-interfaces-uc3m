@@ -322,6 +322,7 @@ body {
         #content {
             width: 70%;
             float: left;
+            margin-bottom: 60px;
 
             .flexslider {
               z-index: 0;
@@ -338,7 +339,7 @@ body {
 
                     img{
                         float: left;
-                        width: 40%;
+                        height: 120px;
                         padding-right: 30px;
                     }
                 }
