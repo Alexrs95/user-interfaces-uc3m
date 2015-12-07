@@ -206,11 +206,14 @@ footer {
   color: #000E77; }
 
 body main {
+  padding-top: 30px;
   width: 70%;
   margin: auto; }
   body main #content {
     width: 70%;
     float: left; }
+    body main #content .flexslider {
+      z-index: -1; }
     body main #content #news article {
       clear: both;
       padding: 20px;

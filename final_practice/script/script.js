@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
-    $("nav").sticky({topSpacing:0});
+        $("nav").sticky({topSpacing:0});
+        $('.flexslider').flexslider({
+            animation: "slide",
+            keyboard: true
+        });
 
 
     $('#calendar').fullCalendar({
@@ -86,6 +90,7 @@ $(document).ready(function(){
             'Wyoming'
           ]
         });
+
         states.initialize();
         $('.search').typeahead({
           highlight: true

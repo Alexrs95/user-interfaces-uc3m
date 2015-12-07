@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" />
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="style/styles.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="style/unslider.css" type="text/css">
-        <link rel="stylesheet" href="style/unslider-dots.css" type="text/css">
+        <link href="style/flexslider.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="style/fullcalendar.css" type="text/css">
         <link rel="stylesheet" href="style/fullcalendar.print.css" type="text/css"  media='print'>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -13,9 +14,9 @@
         <script type="text/javascript" src="script/moment.min.js" ></script>
         <script type="text/javascript" src="script/fullcalendar.min.js" ></script>
         <script type="text/javascript" src="script/jquery.sticky.js"></script>
+        <script type="text/javascript" src="script/jquery.flexslider-min.js"></script>
         <script type="text/javascript" src="script/typeahead.js/typeahead.bundle.js"></script>
-        <script type="text/javascript" src="script/unslider.js" ></script>
-        <script type="text/javascript" src="script/script.js" ></script>
+        <script type="text/javascript" src="script/script.js"></script>
 
     </head>
     <body>
@@ -46,17 +47,28 @@
                     <input type="search" class="search" placeholder="Search..." />
                   </div>
                 </div>
-		</nav>
+		    </nav>
         <main>
-            <div class="my-slider">
-            	<ul>
-            		<li>My slide</li>
-            		<li>Another slide</li>
-            		<li>My last slide</li>
-            	</ul>
-            </div>
-
             <div id="content">
+                <div class="flexslider">
+                      <ul class="slides">
+                          <li>
+                              <img src="images/kitty1.jpg" alt="img 1"/>
+                              <p class="flex-caption">Title 1</p>
+                          </li>
+
+                          <li>
+                              <img src="images/kitty1.jpg" alt="img 1"/>
+                              <p class="flex-caption">Title 2</p>
+                          </li>
+
+                          <li>
+                              <img src="images/kitty1.jpg" alt="img 1"/>
+                              <p class="flex-caption">Title 3</p>
+                          </li>
+                          
+                      </ul>
+                    </div>
             <section id="news">
                 <h1>News</h1>
                 <article>

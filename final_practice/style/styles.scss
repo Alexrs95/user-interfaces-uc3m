@@ -83,8 +83,6 @@ header {
     }
 }
 
-
-
 nav {
   padding-left: 100px;
   list-style-type: none;
@@ -293,16 +291,19 @@ footer{
 }
 
 body {
-    // width: 70%;
-    // margin: auto;
 
     main {
+        padding-top: 30px;
         width: 70%;
         margin: auto;
 
         #content {
             width: 70%;
             float: left;
+
+            .flexslider {
+              z-index: -1;
+            }
 
             #news{
 
@@ -344,5 +345,4 @@ body {
             }
         }
     }
-
 }
