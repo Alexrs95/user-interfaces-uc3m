@@ -376,16 +376,29 @@ body {
             border-radius: 5px;
             border: 2px solid $dark-blue;
             padding: 10px;
-            height: 300px;
+            height: 360px;
 
             #calendar {
                 margin: 0 auto;
                 max-width: 170px;
+                margin-bottom: 0px;
             }
 
             #apps{
-                padding: 20px;
-            }
+                padding: 0px 10px 10px 11px;
+                font-size: 1em;
+                a{
+                    text-decoration:none;
+                    color:black;
+                }
+                a:hover{
+                    text-decoration:underline;
+                }
+                em{
+                    font-weight:bold;
+                    font-style:normal;
+                }
+    }
         }
     }
 }

@@ -270,11 +270,21 @@ body main {
     border-radius: 5px;
     border: 2px solid #000E77;
     padding: 10px;
-    height: 300px; }
+    height: 360px; }
     body main #right-pannel #calendar {
       margin: 0 auto;
-      max-width: 170px; }
+      max-width: 170px;
+      margin-bottom: 0px; }
     body main #right-pannel #apps {
-      padding: 20px; }
+      padding: 0px 10px 10px 11px;
+      font-size: 1em; }
+      body main #right-pannel #apps a {
+        text-decoration: none;
+        color: black; }
+      body main #right-pannel #apps a:hover {
+        text-decoration: underline; }
+      body main #right-pannel #apps em {
+        font-weight: bold;
+        font-style: normal; }
 
 /*# sourceMappingURL=styles.css.map */
