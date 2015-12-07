@@ -206,13 +206,11 @@ footer {
     font-size: 1em; }
 
 .tt-suggestion {
+  width: 100%;
   background: #E8EDF6;
   padding: 5px 20px;
   margin-left: 50px;
-  font-size: 1.2em;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
+  font-size: 1.2em; }
 
 .tt-dataset {
   margin-top: 10px; }
