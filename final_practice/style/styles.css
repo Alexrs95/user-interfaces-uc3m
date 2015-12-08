@@ -33,6 +33,7 @@ header {
   header img#logo-big {
     height: 100px; }
   header div#campus_global_text {
+    font-weight: lighter;
     margin-bottom: 10px;
     height: 40px;
     font-size: 35px;

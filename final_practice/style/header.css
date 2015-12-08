@@ -33,6 +33,7 @@ div#header span {
 /* CAMPUS GLOBAL TEXT */
 
 div#campus_global {
+    font-weight: lighter;
     display: inline;
     margin-left: 12%;
     margin-top: 300px;
