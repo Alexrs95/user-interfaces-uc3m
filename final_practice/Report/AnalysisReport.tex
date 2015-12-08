@@ -190,46 +190,59 @@ For coding the stylesheets, we've used Sass, a scripting language that is interp
 
 The implementation itself has followed completely the mockups shown in the section before, since they were high-fidelity mockups. We'll proceed to explain how each part of the web has been developed, including the libraries and plugins used.
 
-- The Login Page:
-%\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_login}
+- \textbf{The Login Page}:  as we have mentioned in the justification part of the document, the box that contains the form has been placed in the center of the screen. For the input fields, we have used a jQuery plugin that places the hint over the input once the user starts to write. This is useful to ensure that the user doesn't lose the context of the action they are doing. For the background to change with a fade in - fade out animation through the set of photos chosen, we've also used another jQuery plugin.
+\begin{center} 
+\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_login}
+\end{center} 
 
-- The header
-%\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_homepage_top}
-	- the menu 
-	- the search
-- The slider
-%\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_results}
-- The cards: to design the cards we followed a minimalist design, so the implementation was
+- \textbf{The header}: It's the first thing catching the user’s eye. Hence, we wanted it to look pleasant to them whilst being functional enhancing the usability of the page.This first division consists of three simple items: a logo in the left, a Campus Global title in the middle and the username in the left, along with a logout button. In order to allocate the items in the header, we found flex displaying option (that will be used also for the footer) as the best way to do so. It offers the possibility to make a responsive implementation with nice-looking, light and understandable html and css codes, without making use of any overheading javascript.
+
+\indent\indent	- \textbf{The navigation menu}: it has been designed and developed taking in mind that it must be accessible easily from anywhere in the page. For this reason, we have used a Jquery plugin that provides a sticky functionality to the menu, so it is always at the top op the page even if the user scrolls down.
+
+\indent\indent - \textbf{The search}: Here we have used a Jquery plugin made by Twitter that provides suggestions among several other features. We have placed it next to the navigation menu to ensure that it is easy to access at all times.
+
+\begin{center} 
+\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_homepage_top}
+\end{center} 
+
+- \textbf{The footer}: here we've used plain-old HTML and CSS. We've included as pointed in the analysis and prototype-design sections all the links related with information and help for the user, the option for changing the language, as well as the social media links.
+
+\begin{center} 
+\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_homepage_footer}
+\end{center} 
+
+	
+- \textbf{The slider}: we wanted to keep a sober look in the page. Since the slider
+is a big element, that catches a lot of attention, we wanted to reduce the animations
+and effects while maximizing the content displayed and the simplicity. The library
+that suited us the most was Flexslider, a JQuery slider with a simple implementation
+that allowed us to display an image and a caption (the title of the article). That
+way, we could highlight some relevant news above the rest of them, that are displayed
+right below in cards.
+
+\begin{center} 
+\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_search}
+\end{center} 
+
+- \textbf{The cards}: to design the cards we followed a minimalist design, so the implementation was
 simple. The cards are composed by a title, a description and an image (if
 it is available). Cards use a light blue background according to UC3M's color
 palette and are 20px one from another. The cards are used in the Home Page to
 show the recent news; and whenever the user performs a search, to display the 
 results.
 
+- \textbf{The calendar}: for the implementation of the calendar we've used the FullCalendar jQuery plugin that allows to easily display events in the calendar. This plugin uses under the hood the Moment library for parsing, validating, manipulating and displaying dates in the calendar. Since the size of the calendar was small, we decided to display events with a green color in the background of each date and explaining each event in the section below labeled as Events which would change accordingly with the months. 
 
-- The calendar: for the implementation of the calendar we've used the FullCalendar jQuery plugin that allows to easily display events in the calendar. This plugin uses under the hood the Moment library for parsing, validating, manipulating and displaying dates in the calendar. Since the size of the calendar was small, we decided to display events with a green color in the background of each date and explaining each event in the section below labeled as Events which would change accordingly with the months. 
+\begin{center} 
+\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_notamedia}
+\end{center} 
 
-%\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_homepage_footer}
-- The footer: here we've used plain-old HTML and CSS. We've included as pointed in the analysis and prototype-design sections all the links related with information and help for the user, the option for changing the language, as well as the social media links.
-
-%\includegraphics[width=13cm, height=8cm, keepaspectratio]{imp_notamedia}
-- The marks: the GPA table has been implemented without the use of any library since we didn't want to
-overload the users with animations and that's why the only effect is a subtle
+- \textbf{The marks}: the GPA table has been implemented without the use of any library since we didn't want to overload the users with animations and that's why the only effect is a subtle
 highlight of the row that the user is hovering on. The table was designed with the
 inspiration of the original Campus Global table, but making a more attractive and
 consistent design with the rest of the redesign (using the UC3M dark blue). We
 kept some features of the original table (i.e. the red highlighting of the GPA)
 while discarding some (i.e. the formulae to compute each GPA is now displaced to
 a more extensive post in the links below the table).
-
-
-
-
-
-
-
-
- 
-
 
 \end{document}
