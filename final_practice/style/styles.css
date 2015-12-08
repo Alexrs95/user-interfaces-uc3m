@@ -170,8 +170,7 @@ footer {
   margin: auto;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   footer div {
-    float: left;
-    background-color: inherit; }
+    float: left; }
   footer ul {
     vertical-align: bottom;
     list-style: none; }

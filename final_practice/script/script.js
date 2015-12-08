@@ -33,6 +33,13 @@ $(function(){
           source: states
         });
 
+    $('.search').keypress(function(event){
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            window.open('search.html', '_self');
+        }
+    });
+
     $('#calendar').fullCalendar({
     	header: {
     			right: 'prev,next'
