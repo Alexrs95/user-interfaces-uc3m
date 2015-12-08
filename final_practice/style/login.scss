@@ -5,14 +5,8 @@ $grey: #CECECE;
 
 $font-stack: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-/* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
-  margin:0;
-  padding:0;
-  font-family: $font-stack;
-}
-
 html,body {
+  font-family: $font-stack;
   margin:0;
   padding:0;
 }
@@ -31,16 +25,18 @@ body{
 
   #login-form {
     img {
+      padding: 20px;
       margin-bottom: 30px;
-      height: 150px;
       width: 150px;
+      height: 150px
     }
 
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    padding: 3% 5%;
-    margin-top: 10%;
+    padding: 0 5%;
+    padding-bottom: 30px;
+    margin-top: 100px;
     background: white;
     width: 15%;
 

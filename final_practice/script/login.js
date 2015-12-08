@@ -2,26 +2,27 @@ $(document).ready(function(){
 	$('input.floatlabel').floatlabel();
 
 	    $('#login').click(function() {
-	    	var valid = true;
+	    	var validPass = false;
+            var validNIA = false;
         	nia = $("#NIA").val();
         	pass = $("#pass").val();
         	if (nia.length != 9) {
         		$("#NIA").css({'border-color': 'red'});
-        		valid = false;
+        		validNIA = false;
         	} else {
         		$("#NIA").css({'border-color': 'gray'});
-        		valid = true;
+        		validNIA = true;
         	}
 
         	if (pass.length == 0) {
         		$("#pass").css({'border-color': 'red'});
-        		valid = false;
+        		validPass = false;
         	} else {
         		$("#pass").css({'border-color': 'gray'});
-        		valid = true;
+        		validPass = true;
         	}
 
-        	if (valid) {
+        	if (validPass && validNIA) {
        			window.open('index.html', '_self');
         	};
     });
